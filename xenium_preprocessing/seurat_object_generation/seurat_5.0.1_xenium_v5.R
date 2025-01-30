@@ -186,6 +186,7 @@ saveRDS(xenium.obj, paste(out_path,sampleID,"_raw.rds",sep=''))
 # works fine Seruat v4.3.0.1 but not in v5.0.1
 # counts <- xenium.obj@assays$Xenium@counts
 # empty_cells <- colnames(counts)[(colSums(counts) == 0)]
+# the below is a copy of the subset_opt() function authored by alikhuseynov at https://github.com/alikhuseynov/add-on_R/blob/develop/R/subset_obj_seurat.R which is a modified version of the subset() function in Seurat. 
 source("/diskmnt/Projects/Users/austins2/tools/subset_obj_seurat.R")
 if (sum(xenium.obj$nCount_Xenium <= opt$counts_cutoff) > 0) {
     xenium.empty <- subset_opt(xenium.obj, subset = nCount_Xenium <= opt$counts_cutoff)
