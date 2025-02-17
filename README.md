@@ -15,8 +15,9 @@ Probes were designed using the code found at `Variant_site_flanking_sequence_and
 * Input targeted sequences are provided at `spatial_driver_co-detection_paper/Variant_site_flanking_sequence_and_probe_compatibility_scripts/input_variant_targets.tsv`
 * Output targeted sequences are provided at `spatial_driver_co-detection_paper/Variant_site_flanking_sequence_and_probe_compatibility_scripts/input_variant_targets_flanks.tsv`
 * Flank sequences require manual review and curration as outlined in the methods. that is present here: `spatial_driver_co-detection_paper/Variant_site_flanking_sequence_and_probe_compatibility_scripts/manual_indel_flank_site_check.xlsx`
+
 Analysis for this paper relied upon the packages installed in the r4.3.2 environment yaml file: `spatial_driver_co-detection_paper/r4.3.2_seurat5.0.1_for_analysis_20250116.yml`
-    * Installation can be done via `conda env create -n scrublet --file r4.3.2_seurat5.0.1_for_analysis_20250116.yml`
+* Installation can be done via `conda env create -n scrublet --file r4.3.2_seurat5.0.1_for_analysis_20250116.yml`
     * analysis relied upon the following packages:
     ```
     Seurat_5.0.1
@@ -46,18 +47,19 @@ Analysis for this paper relied upon the packages installed in the r4.3.2 environ
     ggh4x_0.2.8
     ```
     * the libaries ComplexHeatmap and Circlize were installed directly in R with BiocManager rather than conda.
-    * Code related to analysis from the paper can be found in the `spatial_driver_co-detection_paper/plotting_snippets/plotting_snippets.R`
- 
-    * 
+* Code related to analysis from the paper can be found in the `spatial_driver_co-detection_paper/plotting_snippets/plotting_snippets.R`
+
 ## Other tools used in the analysis of this paper include:
 Copy number calling was run with [GATK4SCNA](https://github.com/Aust1nS2/GATK4SCNA).
 * This relies on two docker image: `austins2/gatk4scna:v1.1` and `austins2/ggplot_gatk4scna:v.2024.08.19`.
 * It is built for running on a HPC cluster running the IBM LSF job scheduler.
 * The worklog for how it was run on the data for this publication can be found at `spatial_driver_co-detection_paper/bulk_WES_cnv/GATK4_somatic_cnv_detection_worklog.sh`
+
 Scrublet for new snRNA-seq/multiome samples was run with [automated_scrublet](https://github.com/Aust1nS2/automated_scrublet).
 * the environment for scrublet automation can be found on the scrublet repository. A docker image is also provided.
 * Example for the stand alone and docker image can be found there.
 * The worklog for running scrublet on the new snRNA-seq data present in this cohort can be found at `spatial_driver_co-detection_paper/snRNA_scRNA_preprocessing/scrublet/worklog.txt`
+
 H&E images were aligned with [HEX-SIFT](https://github.com/Aust1nS2/HEX-SIFT) as outlined in the worklog file.
 * The envrionment and installation instructions for HEX-SIFT image alignment can be found in the above HEX-SIFT repository.
 * The worklog for running HEX-SIFT on each sample can be found at `spatial_driver_co-detection_paper/HE_image_alignment/HEX-SIFT_alignment_worklog.sh`
