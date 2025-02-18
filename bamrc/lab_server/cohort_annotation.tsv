@@ -1,0 +1,35 @@
+Sample_ID	Site	Type	Disease	Sample_control
+HT243B1-S1H1A4U1	Breast	Primary	BRCA	Cancer sample
+HT305B1-S1H5A1U1	Breast	Primary	BRCA	Cancer sample
+HT308B1-S1H5A4U1	Breast	Primary	BRCA	Cancer sample
+HT425B1-S1H1Fp1U1	Breast	Primary	BRCA	Cancer sample
+HT65B1-H1A1A4U1	Breast	Primary	BRCA	Cancer sample
+HT268B1-Th1H3L1U1	Liver	Metastasis	BRCA	Cancer sample
+C3L-01287-11Us2_1	Kidney	Primary	ccRCC	Cancer sample
+WUPE08092A1-S1H3U1	Liver	Primary	CHOL	Cancer sample
+SP002C1-Fp1U2	Colon	Primary	CRC	Cancer sample
+HT260C1-Th1K1L1U1	Liver	Metastasis	CRC	Cancer sample
+HT179C1-T1Fp3L5U1	Liver	Metastasis	CRC	Cancer sample
+C3L-03372-12Us3_1	Brain	Primary	GBM	Cancer sample
+C3N-00663-11U3	Brain	Primary	GBM	Cancer sample
+WUPE82256U1-Fp1U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE25723U1-Fp1U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE68972U1-Fp1U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE38758U1-Fp1U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE62598U1-Fp2U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE28077U1-Fp1U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE86238U1-Fp1U1	Bone Marrow	Primary	MM	Cancer sample
+WUPE04916U1-Fp1U1	Scalp Plasmocytoma	Metastasis	MM	Cancer sample
+HT227P1-S1H1L1U1	Pancreas	Primary	PDAC	Cancer sample
+HT242P1-S1H4L4U1	Pancreas	Primary	PDAC	Cancer sample
+HT284P1-S1H1A1U1	Pancreas	Primary	PDAC	Cancer sample
+HT270P1-S1H1A1US2_1	Pancreas	Primary	PDAC	Cancer sample
+HT060P1-S1R1Fp1U1	Pancreas	Primary	PDAC	Cancer sample
+HT061P1-S1P1A1L1U1	Pancreas	Primary	PDAC	Cancer sample
+HT061P1-S1P1A1L4U1	Pancreas	Primary	PDAC	Cancer sample
+HT125P1-S1H4A1L1U1	Pancreas	Primary	PDAC	Cancer sample
+HT125P1-S1H8A1U1	Pancreas	Primary	PDAC	Cancer sample
+HT185P1-S1H2L1U1	Pancreas	Primary	PDAC	Cancer sample
+SP001P1-Fp1U1	Body wall	Metastasis	PDAC	Cancer sample
+SN105H1-Ma1Fp2-5U1	Bone Marrow hip	Normal	Healthy	Healthy control
+SN106H1-Ma1Fp2-7U1	Bone Marrow hip	Normal	Healthy	Healthy control

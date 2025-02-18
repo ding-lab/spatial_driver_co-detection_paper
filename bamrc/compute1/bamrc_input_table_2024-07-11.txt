@@ -1,0 +1,8 @@
+C3L-03372-12Us3_1	C3L-03372.WXS.T.hg38	/storage1/fs1/m.wyczalkowski/Active/Primary/CPTAC3.share/CPTAC3-GDC/GDC_import/data/0dd34017-3bea-4078-bfb6-359d08615f12/0f606cd0-59c7-4da4-be52-58226d2b3cd5_wxs_gdc_realn.bam
+C3L-03372-12Us3_1	C3L-03372.WXS.N.hg38	/storage1/fs1/m.wyczalkowski/Active/Primary/CPTAC3.share/CPTAC3-GDC/GDC_import/data/232df735-b856-4f31-840a-0e28d746748a/69294b54-61df-4d78-a0da-7e5f1420368c_wxs_gdc_realn.bam
+C3L-01287-11Us2_1	C3L-01287.WXS.T	/storage1/fs1/dinglab/Active/Primary/CPTAC3.share/CPTAC3-GDC/GDC_import/data/e58d856a-e047-41f2-8700-4a7f61158cd4/07514a87-8290-46cf-9276-ed86d25cafcb_gdc_realn.bam
+C3L-01287-11Us2_1	C3L-01287.WXS.N	/storage1/fs1/dinglab/Active/Primary/CPTAC3.share/CPTAC3-GDC/GDC_import/data/8f61ee95-ee30-47d2-b678-3b345ff918f8/5ed32977-dc68-4499-91a2-14b00a4c0c9e_gdc_realn.bam
+C3N-00663-11U3	C3N-00663.WXS.N.hg38	/storage1/fs1/m.wyczalkowski/Active/Primary/CPTAC3.share/CPTAC3-GDC/GDC_import/data/aeec4ab0-c3bf-4a88-af43-61cac87354c9/a1aa3a23-f590-48d2-b559-2340afcb3e6c_wxs_gdc_realn.bam
+C3N-00663-11U3	C3N-00663.WXS.T.hg38	/storage1/fs1/m.wyczalkowski/Active/Primary/CPTAC3.share/CPTAC3-GDC/GDC_import/data/a358088e-5d69-40d2-add9-87260dd0680a/cd98c349-930d-4cd6-a2db-5bb1a7f4951b_wxs_gdc_realn.bam
+HT270P1-S1H1A1US2_1	HT270P1-S1H1A4K1D1_1.T	/storage1/fs1/dinglab/Active/Projects/austins2/pdac/bulk_WES/BAM/2023-11-09/HT270P1-S1H1A4K1D1_1.T/HT270P1-S1H1A4K1D1_1.T.human.remDup.bam
+HT270P1-S1H1A1US2_1	HT270P1-Jm1D1_1.N	/storage1/fs1/dinglab/Active/Projects/austins2/pdac/bulk_WES/BAM/2023-11-09/HT270P1-Jm1D1_1.N/HT270P1-Jm1D1_1.N.human.remDup.bam
