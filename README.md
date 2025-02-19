@@ -66,4 +66,9 @@ H&E images were aligned with [HEX-SIFT](https://github.com/Aust1nS2/HEX-SIFT) as
 * The worklog for running HEX-SIFT on each sample can be found at `spatial_driver_co-detection_paper/HE_image_alignment/HEX-SIFT_alignment_worklog.sh`
 * Depending on the input image file this can take up to 400GB of memory.
 
+Mutation mapping in matching snRNA-seq data relied on [scVarScan](https://github.com/ding-lab/10Xmapping) and custom scripts for post-processing as outlined in the worklog file.
+* The version of perl installed on the server that scVarScan was run on was v5.26.2. The post-processing scripts run with the conda python 3.9.6 environment from [automated_scrublet](https://github.com/Aust1nS2/automated_scrublet) active.
+* The worklog for running scVarScan can be found at `spatial_driver_co-detection_paper/snRNA_mutation_mapping/matching_snRNA_mutation_mapping_worklog.sh`
+* post processing scripts are located in `spatial_driver_co-detection_paper/snRNA_mutation_mapping`
+
 ## Data Acccess
