@@ -16,7 +16,7 @@ for (col_name in colnames(vaf_df)) {
     vaf_df[,col_name][vaf_df[,col_name] == ""] <- NA
     vaf_df[,col_name] <- as.numeric(vaf_df[,col_name])
 }
-out_dir <- "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/bamrc_output/vaf_summary_table/v3_freeze/test/"
+out_dir <- "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/bamrc_output/vaf_summary_table/v3_freeze/"
 var_anno_path = "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/bamrc_output/vaf_summary_table/v3_freeze/variant_annotation.tsv"
 sample_anno_path = "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/bamrc_output/vaf_summary_table/v3_freeze/cohort_annotation.tsv"
 sample_summary_path = "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/bamrc_output/vaf_summary_table/v3_freeze/cohort_summary.tsv"
