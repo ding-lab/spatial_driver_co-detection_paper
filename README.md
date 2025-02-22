@@ -47,7 +47,7 @@ Analysis for this paper relied upon the packages installed in the r4.3.2 environ
     ggh4x_0.2.8
     ```
     * the libaries ComplexHeatmap and Circlize were installed directly in R with BiocManager rather than conda.
-* Code related to analysis from the paper can be found in the `spatial_driver_co-detection_paper/plotting_snippets/plotting_snippets.R`
+* Code related to analysis from the paper can be found in the `spatial_driver_co-detection_paper/plotting_snippets/` folder. The worklogs in each folder describe how the code/tables were used and how code was run.
 
 ## Other tools used in the analysis of this paper include:
 Copy number calling was run with [GATK4SCNA](https://github.com/Aust1nS2/GATK4SCNA).
@@ -70,5 +70,7 @@ Mutation mapping in matching snRNA-seq data relied on [scVarScan](https://github
 * The version of perl installed on the server that scVarScan was run on was v5.26.2. The post-processing scripts run with the conda python 3.9.6 environment from [automated_scrublet](https://github.com/Aust1nS2/automated_scrublet) active.
 * The worklog for running scVarScan can be found at `spatial_driver_co-detection_paper/snRNA_mutation_mapping/matching_snRNA_mutation_mapping_worklog.sh`
 * post processing scripts are located in `spatial_driver_co-detection_paper/snRNA_mutation_mapping`
+
+Variant calling (snvs/indels) was run using [Somaticwrapper](https://github.com/ding-lab/somaticwrapper) and it's implementation in the [PECGS pipeline](https://github.com/ding-lab/pecgs-pipeline).
 
 ## Data Acccess
