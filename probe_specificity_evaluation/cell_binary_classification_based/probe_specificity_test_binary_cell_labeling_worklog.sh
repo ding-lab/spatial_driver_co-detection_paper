@@ -374,11 +374,15 @@ Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/check_xenium_snv_geno
 -s C3L-01287-11Us2_1 \
 -t 'cancer cell region 2' \
 -u ''
-#compiling results to a single table 
+# the output "Sample_ID_probe_specificity_table.csv" files from the above commands are listed in an input table called "variant_result_compiling_input_table_6.tsv" and used as input for the following steps.
+# compiling individual table results to a single table that is just the results from individual samples.
 cd /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/
+# the output of the following command is Supplementary Table 8: "Supp Table 8 cell individual" 
 Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/variant_result_compiling_v5.R  variant_result_compiling_input_table_6.tsv /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/ # The output of this is Supplementary Table 8
 cd /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/Variant_specific_results/
+# Supplementary Table 8 in a file called "All_variants_probe_specificity_results_by_sample.tsv" is used as input for the following command. The output of the following command is Supplementary Table 7: "Supp Table 7 cell" and saved to the file called "All_variants_probe_specificity_results_removed_unknown_v6_subclone_with_germline.tsv"
 Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/probe_specificity_sample_summary_germline_v5.R All_variants_probe_specificity_results_by_sample.tsv All_variants_probe_specificity_results_removed_unknown_v6_subclone_with_germline.tsv &> runlog_probe_specificity_sample_summary_germline_v6_subclone.txt # The output of this is Supplementary Table 7
+# Supplementary Table 8 in a file called "All_variants_probe_specificity_results_by_sample.tsv" is used as input for the following command along with the auxillary file "sample_mutation_table_based_on_bulk_7.tsv". The output of the following command is Figure 1c and saved to the file called "All_variants_by_sample_cohort_level_with_v6_germline_false_positive_rate.pdf" in the plots directory that is generated in the output folder.
 Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/probe_specificity_sample_summary_germline_v5_plotting_false_positive_v2.R \
 /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/Variant_specific_results/All_variants_probe_specificity_results_by_sample.tsv \
 All_variants_by_sample_cohort_level_with_v6_germline_false_positive_rate.pdf \

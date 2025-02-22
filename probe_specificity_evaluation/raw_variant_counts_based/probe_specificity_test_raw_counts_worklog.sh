@@ -1,6 +1,7 @@
 # removed_unknown_v6/counts based
 # checking genotyping results for Xenium SNV panel v1 samples (probe_specificity_test with probe based count excluding the unknown/necrotic cell types because they are more likely to have high amount of false positive binding)
 # conda activate seurat5
+# these rely on the Seurat objects as input.
 # cd /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6/counts_based/
 # 1
 Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/check_xenium_snv_genotype_results_counts_remove_unknown_v5.R \
@@ -343,8 +344,8 @@ Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/check_xenium_snv_geno
 -t 'Tumor' \
 -u 'LowCount'
 
-# now doing the removed_unknown_v5 counts based again but this time only including the cells thought to be tumor subclones as the cancer cell labels when using the `-t` flag.
-# removed_unknown_v5_subclone/counts_based
+# now doing the removed_unknown_v6 counts based again but this time only including the cells thought to be tumor subclones as the cancer cell labels when using the `-t` flag.
+# removed_unknown_v6_subclone/counts_based
 cd /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/counts_based
 ln -s /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6/counts_based/* .
 # for samples with subclones present remove the non-subclonal result links from the new folder since we want to preserve them and not overwrite it
@@ -373,8 +374,11 @@ Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/check_xenium_snv_geno
 -s C3L-01287-11Us2_1 \
 -t 'cancer cell region 2' \
 -u ''
-# compiling results to a single table
+# the output "Sample_ID_probe_specificity_table.csv" files from the above commands are listed in an input table called "variant_result_compiling_input_table_6.tsv" and used as input for the following steps.
+# compiling individual table results to a single table that is just the results from individual samples.
 cd /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/counts_based/
-Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/variant_result_compiling_counts_v5.R  variant_result_compiling_input_table_6.tsv /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/counts_based/ # The output of this is Supplementary Table 5
+# the output of the following command is Supplementary Table 5: "Supp Table 5 count individual" 
+Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/variant_result_compiling_counts_v5.R variant_result_compiling_input_table_6.tsv /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/counts_based/
 cd /diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/counts_based/Variant_specific_results/
+# Supplementary Table 5 in a file called "All_variants_probe_specificity_results_by_sample.tsv" is used as input for the following command. The output of the following command is Supplementary Table 4: "Supp Table 4 count" and saved to the file called "All_variants_probe_specificity_results_removed_unknown_v6_subclone_counts_with_germline.tsv"
 Rscript /diskmnt/Projects/Users/austins2/tools/xenium_snvs/probe_specificity_sample_summary_counts_germline_v5.R All_variants_probe_specificity_results_by_sample.tsv All_variants_probe_specificity_results_removed_unknown_v6_subclone_counts_with_germline.tsv &> runlog_probe_specificity_sample_summary_counts_germline_v6_subclone.txt #the output of this is Supplementary Table 4 

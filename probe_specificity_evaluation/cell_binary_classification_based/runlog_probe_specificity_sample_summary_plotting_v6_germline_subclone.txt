@@ -1,0 +1,232 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning message:
+package ‘epitools’ was built under R version 4.3.3 
+
+Attaching package: ‘effectsize’
+
+The following objects are masked from ‘package:epitools’:
+
+    oddsratio, riskratio
+
+Warning message:
+package ‘effectsize’ was built under R version 4.3.3 
+[1] "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/Variant_specific_results/All_variants_probe_specificity_results_by_sample.tsv"
+[2] "All_variants_by_sample_cohort_level_with_v6_germline_false_positive_rate.pdf"                                                                                                                   
+[3] "/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/probe_specificity_test/new/removed_unknown_v6_subclone/Variant_specific_results/sample_mutation_table_based_on_bulk_7.tsv"           
+[1] "ATM-p-Q628fs-ALT-T"
+[1] "HT305B1-S1H5A1U1"
+              ALT     WT
+Cancer_cell  3467   1240
+Normal_cell 67521 101291
+[1] 1
+[1] "FANCA-p-E1240fs-ALT--"
+[1] "HT425B1-S1H1Fp1U1"
+              ALT    WT
+Cancer_cell   638   515
+Normal_cell 11298 59828
+[1] 2
+[1] "APC-p-S1298Ffs--3-ALT-T"
+[1] "HT260C1-Th1K1L1U1"
+             ALT    WT
+Cancer_cell   84    21
+Normal_cell 7307 50559
+[1] 3
+[1] "BRCA2-p-A938fs-ALT--"
+[1] "HT243B1-S1H1A4U1"
+             ALT    WT
+Cancer_cell  730   720
+Normal_cell 4281 53892
+[1] 4
+[1] "ATM-p-Y1124---ALT-G"
+[1] "HT308B1-S1H5A4U1"  "HT060P1-S1R1Fp1U1"
+             ALT     WT
+Cancer_cell 2233   9297
+Normal_cell 1254 137570
+[1] 5
+[1] "TP53-p-Y220C-ALT-C"
+[1] "HT65B1-H1A1A4U1"
+             ALT     WT
+Cancer_cell 1262   1254
+Normal_cell 2297 187551
+[1] 6
+[1] "CTNNB1-p-S45Y-ALT-A"
+[1] "HT284P1-S1H1A1U1"
+             ALT    WT
+Cancer_cell 8998   624
+Normal_cell 1732 18594
+[1] 7
+[1] "DLGAP4-p-Q689---ALT-T"
+[1] "WUPE04916U1-Fp1U1"
+             ALT     WT
+Cancer_cell   75     51
+Normal_cell 6042 108918
+[1] 8
+[1] "IDH1-p-R132C-ALT-A"
+[1] "C3L-03372-12Us3_1"
+             ALT    WT
+Cancer_cell  439   195
+Normal_cell 4371 42290
+[1] 9
+[1] "IDH1-p-R132H-ALT-T"
+[1] "WUPE68972U1-Fp1U1" "C3N-00663-11U3"
+              ALT    WT
+Cancer_cell  1822   412
+Normal_cell 38380 39815
+[1] 10
+[1] "APC-p-R213---ALT-A"
+[1] "WUPE08092A1-S1H3U1"
+              ALT    WT
+Cancer_cell    40    82
+Normal_cell 21552 42610
+[1] 11
+[1] "BAP1-p-T93A-ALT-C"
+[1] "C3L-01287-11Us2_1"
+             ALT     WT
+Cancer_cell   13     14
+Normal_cell 1381 107100
+[1] 12
+[1] "DIS3-p-E429Q-ALT-G"
+[1] "WUPE82256U1-Fp1U1"
+             ALT    WT
+Cancer_cell   55     3
+Normal_cell 3356 63642
+[1] 13
+[1] "DIS3-p-R780K-ALT-T"
+[1] "WUPE25723U1-Fp1U1"
+              ALT    WT
+Cancer_cell    18     4
+Normal_cell 11196 28292
+[1] 14
+[1] "IRF4-p-Q300---ALT-T"
+[1] "WUPE62598U1-Fp2U1"
+              ALT   WT
+Cancer_cell  6412 1182
+Normal_cell 32572 5780
+[1] 15
+[1] "NRAS-p-Q61H-ALT-G"
+[1] "WUPE86238U1-Fp1U1"
+             ALT     WT
+Cancer_cell   99     72
+Normal_cell 2547 122145
+[1] 16
+[1] "TP53-p-R282W-ALT-A"
+[1] "C3N-00663-11U3"
+            ALT    WT
+Cancer_cell 101   624
+Normal_cell 706 39352
+[1] 17
+[1] "BRAF-p-V600E-ALT-T"
+[1] "WUPE28077U1-Fp1U1"
+             ALT    WT
+Cancer_cell   87    15
+Normal_cell 5399 22843
+[1] 18
+[1] "GNAS-p-R201C-ALT-T"
+[1] "SP001P1-Fp1U1"
+              ALT     WT
+Cancer_cell 14668   8216
+Normal_cell 11684 447051
+[1] 19
+[1] "KRAS-p-G12D-ALT-T"
+[1] "HT227P1-S1H1L1U1"    "HT242P1-S1H4L4U1"    "SP001P1-Fp1U1"     
+[4] "HT270P1-S1H1A1US2_1" "HT061P1-S1P1A1L1U1"  "HT061P1-S1P1A1L4U1" 
+[7] "HT179C1-T1Fp3L5U1"  
+              ALT    WT
+Cancer_cell 12313  6668
+Normal_cell  3789 29569
+[1] 20
+[1] "KRAS-p-G12V-ALT-A"
+[1] "SP002C1-Fp1U2"     "HT060P1-S1R1Fp1U1"  "HT125P1-S1H4A1L1U1"
+[4] "HT125P1-S1H8A1U1"   "HT185P1-S1H2L1U1"  
+             ALT    WT
+Cancer_cell 3290   956
+Normal_cell 1356 35704
+[1] 21
+[1] "KRAS-p-Q61H-ALT-G"
+[1] "WUPE38758U1-Fp1U1"
+             ALT    WT
+Cancer_cell    4    18
+Normal_cell 3356 86755
+[1] 22
+[1] "PIK3CA-p-E545K-ALT-A"
+[1] "HT425B1-S1H1Fp1U1" "HT179C1-T1Fp3L5U1"
+             ALT    WT
+Cancer_cell 4557  1051
+Normal_cell 1219 78731
+[1] 23
+[1] "PELI1-p-R46T-ALT-G"
+[1] "HT268B1-Th1H3L1U1"
+             ALT     WT
+Cancer_cell   67  27216
+Normal_cell 1089 207200
+[1] 24
+[1] "SMG1-p-K3172T-ALT-G"
+[1] "HT242P1-S1H4L4U1"
+             ALT     WT
+Cancer_cell   36   7653
+Normal_cell 2682 422188
+[1] 25
+[1] "EEF1A1-p-D442H-ALT-G"
+[1] "HT268B1-Th1H3L1U1"
+              ALT      WT
+Cancer_cell 76641  101292
+Normal_cell 35916 2634697
+[1] 26
+[1] "MAP1B-p-E611D-ALT-T"
+[1] "HT268B1-Th1H3L1U1"
+             ALT     WT
+Cancer_cell  757  17667
+Normal_cell 4199 118300
+[1] 27
+[1] "PGAP2-p---316Rext--40-ALT-C"
+[1] "HT268B1-Th1H3L1U1"
+             ALT    WT
+Cancer_cell 1009   386
+Normal_cell 1831 11721
+[1] 28
+[1] "TPD52L1-p-A21---ALT-T"
+[1] "HT260C1-Th1K1L1U1"
+            ALT    WT
+Cancer_cell 567  2694
+Normal_cell 503 45785
+[1] 29
+[1] "LDHB-p-Q307---ALT-T"
+[1] "HT260C1-Th1K1L1U1"
+             ALT     WT
+Cancer_cell 7571   8599
+Normal_cell 4657 549312
+[1] 30
+There were 12 warnings (use warnings() to see them)
+[1] 1
+Warning messages:
+1: Removed 1 rows containing non-finite values (`stat_boxplot()`). 
+2: Removed 1 rows containing missing values (`geom_point()`). 
+3: Removed 1 rows containing non-finite values (`stat_boxplot()`). 
+4: Removed 1 rows containing missing values (`geom_point()`). 
+5: Removed 1 rows containing non-finite values (`stat_boxplot()`). 
+6: Removed 1 rows containing missing values (`geom_point()`). 
+7: Removed 2 rows containing non-finite values (`stat_boxplot()`). 
+8: Removed 2 rows containing missing values (`geom_point()`). 
+9: Removed 1 rows containing non-finite values (`stat_boxplot()`). 
+10: Removed 1 rows containing missing values (`geom_point()`). 
+null device 
+          1 
+Warning messages:
+1: Removed 6 rows containing non-finite values (`stat_boxplot()`). 
+2: Removed 6 rows containing missing values (`geom_point()`). 
+null device 
+          1 
+Warning messages:
+1: Removed 6 rows containing non-finite values (`stat_boxplot()`). 
+2: Removed 6 rows containing missing values (`geom_point()`). 
+null device 
+          1 

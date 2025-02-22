@@ -1,0 +1,1586 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘scales’
+
+The following object is masked from ‘package:purrr’:
+
+    discard
+
+The following object is masked from ‘package:readr’:
+
+    col_factor
+
+[1] "loading inputs"
+[1] "adding count of cells where variant was detected"
+[1] "re-adding proportions to include those not previously included"
+[1] "looping over samples for plotting each mutant variant"
+[1] "HT227P1-S1H1L1U1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+843  KRAS-p-G12D-ALT-T       0.68181818 HT227P1-S1H1L1U1          45  n_cell=66
+8431 KRAS-p-G12D-ALT-T       0.31818182 HT227P1-S1H1L1U1          21  n_cell=66
+8432 KRAS-p-G12D-ALT-T       0.08888889 HT227P1-S1H1L1U1           8  n_cell=89
+8433 KRAS-p-G12D-ALT-T       0.91111111 HT227P1-S1H1L1U1          82  n_cell=89
+        cell_type     probe_target probe_total
+843  Cancer cells   Variant allele          66
+8431 Cancer cells Reference allele          66
+8432 Normal cells   Variant allele          90
+8433 Normal cells Reference allele          90
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+875  KRAS-p-G12V-ALT-A       0.16000000 HT227P1-S1H1L1U1           4  n_cell=25
+8751 KRAS-p-G12V-ALT-A       0.84000000 HT227P1-S1H1L1U1          21  n_cell=25
+8752 KRAS-p-G12V-ALT-A       0.05747126 HT227P1-S1H1L1U1           5  n_cell=86
+8753 KRAS-p-G12V-ALT-A       0.94252874 HT227P1-S1H1L1U1          82  n_cell=86
+        cell_type     probe_target probe_total
+875  Cancer cells   Variant allele          25
+8751 Cancer cells Reference allele          25
+8752 Normal cells   Variant allele          87
+8753 Normal cells Reference allele          87
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+843  KRAS-p-G12D-ALT-T       0.68181818 HT227P1-S1H1L1U1          45  n_cell=66
+8431 KRAS-p-G12D-ALT-T       0.31818182 HT227P1-S1H1L1U1          21  n_cell=66
+8432 KRAS-p-G12D-ALT-T       0.08888889 HT227P1-S1H1L1U1           8  n_cell=89
+8433 KRAS-p-G12D-ALT-T       0.91111111 HT227P1-S1H1L1U1          82  n_cell=89
+        cell_type     probe_target probe_total
+843  Cancer cells   Variant allele          66
+8431 Cancer cells Reference allele          66
+8432 Normal cells   Variant allele          90
+8433 Normal cells Reference allele          90
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+875  KRAS-p-G12V-ALT-A       0.16000000 HT227P1-S1H1L1U1           4  n_cell=25
+8751 KRAS-p-G12V-ALT-A       0.84000000 HT227P1-S1H1L1U1          21  n_cell=25
+8752 KRAS-p-G12V-ALT-A       0.05747126 HT227P1-S1H1L1U1           5  n_cell=86
+8753 KRAS-p-G12V-ALT-A       0.94252874 HT227P1-S1H1L1U1          82  n_cell=86
+        cell_type     probe_target probe_total
+875  Cancer cells   Variant allele          25
+8751 Cancer cells Reference allele          25
+8752 Normal cells   Variant allele          87
+8753 Normal cells Reference allele          87
+NULL
+[1] "HT242P1-S1H4L4U1"
+[1] "KRAS-p-G12D-ALT-T"   "KRAS-p-G12V-WT"      "KRAS-p-G12V-ALT-A"  
+[4] "SMG1-p-K3172T-ALT-G" "SMG1-p-K3172T-WT"   
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+844  KRAS-p-G12D-ALT-T       0.95797414 HT242P1-S1H4L4U1         889 n_cell=914
+8441 KRAS-p-G12D-ALT-T       0.04202586 HT242P1-S1H4L4U1          39 n_cell=914
+8442 KRAS-p-G12D-ALT-T       0.31557377 HT242P1-S1H4L4U1          77 n_cell=242
+8443 KRAS-p-G12D-ALT-T       0.68442623 HT242P1-S1H4L4U1         167 n_cell=242
+        cell_type     probe_target probe_total
+844  Cancer cells   Variant allele         928
+8441 Cancer cells Reference allele         928
+8442 Normal cells   Variant allele         244
+8443 Normal cells Reference allele         244
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+876  KRAS-p-G12V-ALT-A       0.17021277 HT242P1-S1H4L4U1           8  n_cell=47
+8761 KRAS-p-G12V-ALT-A       0.82978723 HT242P1-S1H4L4U1          39  n_cell=47
+8762 KRAS-p-G12V-ALT-A       0.03468208 HT242P1-S1H4L4U1           6 n_cell=172
+8763 KRAS-p-G12V-ALT-A       0.96531792 HT242P1-S1H4L4U1         167 n_cell=172
+        cell_type     probe_target probe_total
+876  Cancer cells   Variant allele          47
+8761 Cancer cells Reference allele          47
+8762 Normal cells   Variant allele         173
+8763 Normal cells Reference allele         173
+[1] "SMG1-p-K3172T-ALT-G"
+               probe_site probe_proportion        sample.ID probe_count
+1228  SMG1-p-K3172T-ALT-G      0.004179728 HT242P1-S1H4L4U1          36
+12281 SMG1-p-K3172T-ALT-G      0.995820272 HT242P1-S1H4L4U1        8577
+12282 SMG1-p-K3172T-ALT-G      0.005002175 HT242P1-S1H4L4U1          23
+12283 SMG1-p-K3172T-ALT-G      0.994997825 HT242P1-S1H4L4U1        4575
+       cell_count    cell_type     probe_target probe_total
+1228  n_cell=7689 Cancer cells   Variant allele        8613
+12281 n_cell=7689 Cancer cells Reference allele        8613
+12282 n_cell=4361 Normal cells   Variant allele        4598
+12283 n_cell=4361 Normal cells Reference allele        4598
+[1] "SMG1-p-K3172T-WT"
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+844  KRAS-p-G12D-ALT-T       0.95797414 HT242P1-S1H4L4U1         889 n_cell=914
+8441 KRAS-p-G12D-ALT-T       0.04202586 HT242P1-S1H4L4U1          39 n_cell=914
+8442 KRAS-p-G12D-ALT-T       0.31557377 HT242P1-S1H4L4U1          77 n_cell=242
+8443 KRAS-p-G12D-ALT-T       0.68442623 HT242P1-S1H4L4U1         167 n_cell=242
+        cell_type     probe_target probe_total
+844  Cancer cells   Variant allele         928
+8441 Cancer cells Reference allele         928
+8442 Normal cells   Variant allele         244
+8443 Normal cells Reference allele         244
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+876  KRAS-p-G12V-ALT-A       0.17021277 HT242P1-S1H4L4U1           8  n_cell=47
+8761 KRAS-p-G12V-ALT-A       0.82978723 HT242P1-S1H4L4U1          39  n_cell=47
+8762 KRAS-p-G12V-ALT-A       0.03468208 HT242P1-S1H4L4U1           6 n_cell=172
+8763 KRAS-p-G12V-ALT-A       0.96531792 HT242P1-S1H4L4U1         167 n_cell=172
+        cell_type     probe_target probe_total
+876  Cancer cells   Variant allele          47
+8761 Cancer cells Reference allele          47
+8762 Normal cells   Variant allele         173
+8763 Normal cells Reference allele         173
+[1] "SMG1-p-K3172T-ALT-G"
+               probe_site probe_proportion        sample.ID probe_count
+1228  SMG1-p-K3172T-ALT-G      0.004179728 HT242P1-S1H4L4U1          36
+12281 SMG1-p-K3172T-ALT-G      0.995820272 HT242P1-S1H4L4U1        8577
+12282 SMG1-p-K3172T-ALT-G      0.005002175 HT242P1-S1H4L4U1          23
+12283 SMG1-p-K3172T-ALT-G      0.994997825 HT242P1-S1H4L4U1        4575
+       cell_count    cell_type     probe_target probe_total
+1228  n_cell=7689 Cancer cells   Variant allele        8613
+12281 n_cell=7689 Cancer cells Reference allele        8613
+12282 n_cell=4361 Normal cells   Variant allele        4598
+12283 n_cell=4361 Normal cells Reference allele        4598
+[1] "SMG1-p-K3172T-WT"
+NULL
+[1] "HT243B1-S1H1A4U1"
+[1] "BRCA2-p-A938fs-ALT--" "BRCA2-p-A938fs-WT"   
+[1] "BRCA2-p-A938fs-ALT--"
+               probe_site probe_proportion        sample.ID probe_count
+301  BRCA2-p-A938fs-ALT--        0.5622677 HT243B1-S1H1A4U1         605
+3011 BRCA2-p-A938fs-ALT--        0.4377323 HT243B1-S1H1A4U1         471
+3012 BRCA2-p-A938fs-ALT--        0.3247423 HT243B1-S1H1A4U1         126
+3013 BRCA2-p-A938fs-ALT--        0.6752577 HT243B1-S1H1A4U1         262
+      cell_count    cell_type     probe_target probe_total
+301  n_cell=1065 Cancer cells   Variant allele        1076
+3011 n_cell=1065 Cancer cells Reference allele        1076
+3012  n_cell=385 Normal cells   Variant allele         388
+3013  n_cell=385 Normal cells Reference allele         388
+[1] "BRCA2-p-A938fs-WT"
+[1] "BRCA2-p-A938fs-ALT--"
+               probe_site probe_proportion        sample.ID probe_count
+301  BRCA2-p-A938fs-ALT--        0.5622677 HT243B1-S1H1A4U1         605
+3011 BRCA2-p-A938fs-ALT--        0.4377323 HT243B1-S1H1A4U1         471
+3012 BRCA2-p-A938fs-ALT--        0.3247423 HT243B1-S1H1A4U1         126
+3013 BRCA2-p-A938fs-ALT--        0.6752577 HT243B1-S1H1A4U1         262
+      cell_count    cell_type     probe_target probe_total
+301  n_cell=1065 Cancer cells   Variant allele        1076
+3011 n_cell=1065 Cancer cells Reference allele        1076
+3012  n_cell=385 Normal cells   Variant allele         388
+3013  n_cell=385 Normal cells Reference allele         388
+[1] "BRCA2-p-A938fs-WT"
+[1] "HT260C1-Th1K1L1U1"
+[1] "TPD52L1-p-A21---ALT-T"   "TPD52L1-p-A21---WT"     
+[3] "LDHB-p-Q307---ALT-T"     "LDHB-p-Q307---WT"       
+[5] "APC-p-S1298Ffs--3-ALT-T" "APC-p-S1298Ffs--3-WT"   
+[1] "TPD52L1-p-A21---ALT-T"
+                 probe_site probe_proportion         sample.ID probe_count
+1326  TPD52L1-p-A21---ALT-T       0.15109395 HT260C1-Th1K1L1U1         587
+13261 TPD52L1-p-A21---ALT-T       0.84890605 HT260C1-Th1K1L1U1        3298
+13262 TPD52L1-p-A21---ALT-T       0.00810659 HT260C1-Th1K1L1U1         101
+13263 TPD52L1-p-A21---ALT-T       0.99189341 HT260C1-Th1K1L1U1       12358
+       cell_count    cell_type     probe_target probe_total
+1326  n_cell=3261 Cancer cells   Variant allele        3885
+13261 n_cell=3261 Cancer cells Reference allele        3885
+13262 n_cell=9660 Normal cells   Variant allele       12459
+13263 n_cell=9660 Normal cells Reference allele       12459
+[1] "TPD52L1-p-A21---WT"
+[1] "LDHB-p-Q307---ALT-T"
+              probe_site probe_proportion         sample.ID probe_count
+974  LDHB-p-Q307---ALT-T       0.18214877 HT260C1-Th1K1L1U1       13424
+9741 LDHB-p-Q307---ALT-T       0.81785123 HT260C1-Th1K1L1U1       60274
+9742 LDHB-p-Q307---ALT-T       0.01365614 HT260C1-Th1K1L1U1        1356
+9743 LDHB-p-Q307---ALT-T       0.98634386 HT260C1-Th1K1L1U1       97940
+       cell_count    cell_type     probe_target probe_total
+974  n_cell=16170 Cancer cells   Variant allele       73698
+9741 n_cell=16170 Cancer cells Reference allele       73698
+9742 n_cell=32942 Normal cells   Variant allele       99296
+9743 n_cell=32942 Normal cells Reference allele       99296
+[1] "LDHB-p-Q307---WT"
+[1] "APC-p-S1298Ffs--3-ALT-T"
+                 probe_site probe_proportion         sample.ID probe_count
+46  APC-p-S1298Ffs--3-ALT-T        0.7924528 HT260C1-Th1K1L1U1          84
+461 APC-p-S1298Ffs--3-ALT-T        0.2075472 HT260C1-Th1K1L1U1          22
+463 APC-p-S1298Ffs--3-ALT-T        0.4152672 HT260C1-Th1K1L1U1         272
+464 APC-p-S1298Ffs--3-ALT-T        0.5847328 HT260C1-Th1K1L1U1         383
+    cell_count    cell_type     probe_target probe_total
+46  n_cell=105 Cancer cells   Variant allele         106
+461 n_cell=105 Cancer cells Reference allele         106
+463 n_cell=650 Normal cells   Variant allele         655
+464 n_cell=650 Normal cells Reference allele         655
+[1] "APC-p-S1298Ffs--3-WT"
+NULL
+NULL
+[1] "TPD52L1-p-A21---ALT-T"
+                 probe_site probe_proportion         sample.ID probe_count
+1326  TPD52L1-p-A21---ALT-T       0.15109395 HT260C1-Th1K1L1U1         587
+13261 TPD52L1-p-A21---ALT-T       0.84890605 HT260C1-Th1K1L1U1        3298
+13262 TPD52L1-p-A21---ALT-T       0.00810659 HT260C1-Th1K1L1U1         101
+13263 TPD52L1-p-A21---ALT-T       0.99189341 HT260C1-Th1K1L1U1       12358
+       cell_count    cell_type     probe_target probe_total
+1326  n_cell=3261 Cancer cells   Variant allele        3885
+13261 n_cell=3261 Cancer cells Reference allele        3885
+13262 n_cell=9660 Normal cells   Variant allele       12459
+13263 n_cell=9660 Normal cells Reference allele       12459
+[1] "TPD52L1-p-A21---WT"
+[1] "LDHB-p-Q307---ALT-T"
+              probe_site probe_proportion         sample.ID probe_count
+974  LDHB-p-Q307---ALT-T       0.18214877 HT260C1-Th1K1L1U1       13424
+9741 LDHB-p-Q307---ALT-T       0.81785123 HT260C1-Th1K1L1U1       60274
+9742 LDHB-p-Q307---ALT-T       0.01365614 HT260C1-Th1K1L1U1        1356
+9743 LDHB-p-Q307---ALT-T       0.98634386 HT260C1-Th1K1L1U1       97940
+       cell_count    cell_type     probe_target probe_total
+974  n_cell=16170 Cancer cells   Variant allele       73698
+9741 n_cell=16170 Cancer cells Reference allele       73698
+9742 n_cell=32942 Normal cells   Variant allele       99296
+9743 n_cell=32942 Normal cells Reference allele       99296
+[1] "LDHB-p-Q307---WT"
+[1] "APC-p-S1298Ffs--3-ALT-T"
+                 probe_site probe_proportion         sample.ID probe_count
+46  APC-p-S1298Ffs--3-ALT-T        0.7924528 HT260C1-Th1K1L1U1          84
+461 APC-p-S1298Ffs--3-ALT-T        0.2075472 HT260C1-Th1K1L1U1          22
+463 APC-p-S1298Ffs--3-ALT-T        0.4152672 HT260C1-Th1K1L1U1         272
+464 APC-p-S1298Ffs--3-ALT-T        0.5847328 HT260C1-Th1K1L1U1         383
+    cell_count    cell_type     probe_target probe_total
+46  n_cell=105 Cancer cells   Variant allele         106
+461 n_cell=105 Cancer cells Reference allele         106
+463 n_cell=650 Normal cells   Variant allele         655
+464 n_cell=650 Normal cells Reference allele         655
+[1] "APC-p-S1298Ffs--3-WT"
+NULL
+NULL
+[1] "HT268B1-Th1H3L1U1"
+[1] "EEF1A1-p-D442H-ALT-G"        "EEF1A1-p-D442H-WT"          
+[3] "PGAP2-p---316Rext--40-ALT-C" "PGAP2-p---316Rext--40-WT"   
+[5] "MAP1B-p-E611D-ALT-T"         "MAP1B-p-E611D-WT"           
+[7] "PELI1-p-R46T-ALT-G"          "PELI1-p-R46T-WT"            
+[1] "EEF1A1-p-D442H-ALT-G"
+               probe_site probe_proportion         sample.ID probe_count
+495  EEF1A1-p-D442H-ALT-G       0.11717612 HT268B1-Th1H3L1U1      111322
+4951 EEF1A1-p-D442H-ALT-G       0.88282388 HT268B1-Th1H3L1U1      838718
+4952 EEF1A1-p-D442H-ALT-G       0.07035138 HT268B1-Th1H3L1U1       12017
+4953 EEF1A1-p-D442H-ALT-G       0.92964862 HT268B1-Th1H3L1U1      158797
+        cell_count    cell_type     probe_target probe_total
+495  n_cell=177933 Cancer cells   Variant allele      950040
+4951 n_cell=177933 Cancer cells Reference allele      950040
+4952  n_cell=73339 Normal cells   Variant allele      170814
+4953  n_cell=73339 Normal cells Reference allele      170814
+[1] "EEF1A1-p-D442H-WT"
+[1] "PGAP2-p---316Rext--40-ALT-C"
+                       probe_site probe_proportion         sample.ID
+1359  PGAP2-p---316Rext--40-ALT-C        0.7204836 HT268B1-Th1H3L1U1
+13591 PGAP2-p---316Rext--40-ALT-C        0.2795164 HT268B1-Th1H3L1U1
+13592 PGAP2-p---316Rext--40-ALT-C        0.5648148 HT268B1-Th1H3L1U1
+13593 PGAP2-p---316Rext--40-ALT-C        0.4351852 HT268B1-Th1H3L1U1
+      probe_count  cell_count    cell_type     probe_target probe_total
+1359         1013 n_cell=1395 Cancer cells   Variant allele        1406
+13591         393 n_cell=1395 Cancer cells Reference allele        1406
+13592         122  n_cell=216 Normal cells   Variant allele         216
+13593          94  n_cell=216 Normal cells Reference allele         216
+[1] "PGAP2-p---316Rext--40-WT"
+[1] "MAP1B-p-E611D-ALT-T"
+               probe_site probe_proportion         sample.ID probe_count
+1007  MAP1B-p-E611D-ALT-T       0.03759992 HT268B1-Th1H3L1U1         762
+10071 MAP1B-p-E611D-ALT-T       0.96240008 HT268B1-Th1H3L1U1       19504
+10072 MAP1B-p-E611D-ALT-T       0.07912886 HT268B1-Th1H3L1U1         218
+10073 MAP1B-p-E611D-ALT-T       0.92087114 HT268B1-Th1H3L1U1        2537
+        cell_count    cell_type     probe_target probe_total
+1007  n_cell=18424 Cancer cells   Variant allele       20266
+10071 n_cell=18424 Cancer cells Reference allele       20266
+10072  n_cell=2639 Normal cells   Variant allele        2755
+10073  n_cell=2639 Normal cells Reference allele        2755
+[1] "MAP1B-p-E611D-WT"
+[1] "PELI1-p-R46T-ALT-G"
+              probe_site probe_proportion         sample.ID probe_count
+1135  PELI1-p-R46T-ALT-G      0.002171517 HT268B1-Th1H3L1U1          67
+11351 PELI1-p-R46T-ALT-G      0.997828483 HT268B1-Th1H3L1U1       30787
+11352 PELI1-p-R46T-ALT-G      0.004646018 HT268B1-Th1H3L1U1          21
+11353 PELI1-p-R46T-ALT-G      0.995353982 HT268B1-Th1H3L1U1        4499
+        cell_count    cell_type     probe_target probe_total
+1135  n_cell=27283 Cancer cells   Variant allele       30854
+11351 n_cell=27283 Cancer cells Reference allele       30854
+11352  n_cell=4283 Normal cells   Variant allele        4520
+11353  n_cell=4283 Normal cells Reference allele        4520
+[1] "PELI1-p-R46T-WT"
+NULL
+NULL
+NULL
+[1] "EEF1A1-p-D442H-ALT-G"
+               probe_site probe_proportion         sample.ID probe_count
+495  EEF1A1-p-D442H-ALT-G       0.11717612 HT268B1-Th1H3L1U1      111322
+4951 EEF1A1-p-D442H-ALT-G       0.88282388 HT268B1-Th1H3L1U1      838718
+4952 EEF1A1-p-D442H-ALT-G       0.07035138 HT268B1-Th1H3L1U1       12017
+4953 EEF1A1-p-D442H-ALT-G       0.92964862 HT268B1-Th1H3L1U1      158797
+        cell_count    cell_type     probe_target probe_total
+495  n_cell=177933 Cancer cells   Variant allele      950040
+4951 n_cell=177933 Cancer cells Reference allele      950040
+4952  n_cell=73339 Normal cells   Variant allele      170814
+4953  n_cell=73339 Normal cells Reference allele      170814
+[1] "EEF1A1-p-D442H-WT"
+[1] "PGAP2-p---316Rext--40-ALT-C"
+                       probe_site probe_proportion         sample.ID
+1359  PGAP2-p---316Rext--40-ALT-C        0.7204836 HT268B1-Th1H3L1U1
+13591 PGAP2-p---316Rext--40-ALT-C        0.2795164 HT268B1-Th1H3L1U1
+13592 PGAP2-p---316Rext--40-ALT-C        0.5648148 HT268B1-Th1H3L1U1
+13593 PGAP2-p---316Rext--40-ALT-C        0.4351852 HT268B1-Th1H3L1U1
+      probe_count  cell_count    cell_type     probe_target probe_total
+1359         1013 n_cell=1395 Cancer cells   Variant allele        1406
+13591         393 n_cell=1395 Cancer cells Reference allele        1406
+13592         122  n_cell=216 Normal cells   Variant allele         216
+13593          94  n_cell=216 Normal cells Reference allele         216
+[1] "PGAP2-p---316Rext--40-WT"
+[1] "MAP1B-p-E611D-ALT-T"
+               probe_site probe_proportion         sample.ID probe_count
+1007  MAP1B-p-E611D-ALT-T       0.03759992 HT268B1-Th1H3L1U1         762
+10071 MAP1B-p-E611D-ALT-T       0.96240008 HT268B1-Th1H3L1U1       19504
+10072 MAP1B-p-E611D-ALT-T       0.07912886 HT268B1-Th1H3L1U1         218
+10073 MAP1B-p-E611D-ALT-T       0.92087114 HT268B1-Th1H3L1U1        2537
+        cell_count    cell_type     probe_target probe_total
+1007  n_cell=18424 Cancer cells   Variant allele       20266
+10071 n_cell=18424 Cancer cells Reference allele       20266
+10072  n_cell=2639 Normal cells   Variant allele        2755
+10073  n_cell=2639 Normal cells Reference allele        2755
+[1] "MAP1B-p-E611D-WT"
+[1] "PELI1-p-R46T-ALT-G"
+              probe_site probe_proportion         sample.ID probe_count
+1135  PELI1-p-R46T-ALT-G      0.002171517 HT268B1-Th1H3L1U1          67
+11351 PELI1-p-R46T-ALT-G      0.997828483 HT268B1-Th1H3L1U1       30787
+11352 PELI1-p-R46T-ALT-G      0.004646018 HT268B1-Th1H3L1U1          21
+11353 PELI1-p-R46T-ALT-G      0.995353982 HT268B1-Th1H3L1U1        4499
+        cell_count    cell_type     probe_target probe_total
+1135  n_cell=27283 Cancer cells   Variant allele       30854
+11351 n_cell=27283 Cancer cells Reference allele       30854
+11352  n_cell=4283 Normal cells   Variant allele        4520
+11353  n_cell=4283 Normal cells Reference allele        4520
+[1] "PELI1-p-R46T-WT"
+NULL
+NULL
+NULL
+[1] "HT284P1-S1H1A1U1"
+[1] "CTNNB1-p-S45Y-ALT-A" "CTNNB1-p-S45Y-WT"   
+[1] "CTNNB1-p-S45Y-ALT-A"
+              probe_site probe_proportion        sample.ID probe_count
+368  CTNNB1-p-S45Y-ALT-A       0.93342649 HT284P1-S1H1A1U1        9352
+3681 CTNNB1-p-S45Y-ALT-A       0.06657351 HT284P1-S1H1A1U1         667
+3682 CTNNB1-p-S45Y-ALT-A       0.58473282 HT284P1-S1H1A1U1         383
+3683 CTNNB1-p-S45Y-ALT-A       0.41526718 HT284P1-S1H1A1U1         272
+      cell_count    cell_type     probe_target probe_total
+368  n_cell=9622 Cancer cells   Variant allele       10019
+3681 n_cell=9622 Cancer cells Reference allele       10019
+3682  n_cell=645 Normal cells   Variant allele         655
+3683  n_cell=645 Normal cells Reference allele         655
+[1] "CTNNB1-p-S45Y-WT"
+[1] "CTNNB1-p-S45Y-ALT-A"
+              probe_site probe_proportion        sample.ID probe_count
+368  CTNNB1-p-S45Y-ALT-A       0.93342649 HT284P1-S1H1A1U1        9352
+3681 CTNNB1-p-S45Y-ALT-A       0.06657351 HT284P1-S1H1A1U1         667
+3682 CTNNB1-p-S45Y-ALT-A       0.58473282 HT284P1-S1H1A1U1         383
+3683 CTNNB1-p-S45Y-ALT-A       0.41526718 HT284P1-S1H1A1U1         272
+      cell_count    cell_type     probe_target probe_total
+368  n_cell=9622 Cancer cells   Variant allele       10019
+3681 n_cell=9622 Cancer cells Reference allele       10019
+3682  n_cell=645 Normal cells   Variant allele         655
+3683  n_cell=645 Normal cells Reference allele         655
+[1] "CTNNB1-p-S45Y-WT"
+[1] "HT305B1-S1H5A1U1"
+[1] "ATM-p-Q628fs-ALT-T" "ATM-p-Q628fs-WT"   
+[1] "ATM-p-Q628fs-ALT-T"
+             probe_site probe_proportion        sample.ID probe_count
+145  ATM-p-Q628fs-ALT-T        0.8814628 HT305B1-S1H5A1U1        1398
+1451 ATM-p-Q628fs-ALT-T        0.1185372 HT305B1-S1H5A1U1         188
+1452 ATM-p-Q628fs-ALT-T        0.6533537 HT305B1-S1H5A1U1        2143
+1453 ATM-p-Q628fs-ALT-T        0.3466463 HT305B1-S1H5A1U1        1137
+      cell_count    cell_type     probe_target probe_total
+145  n_cell=1550 Cancer cells   Variant allele        1586
+1451 n_cell=1550 Cancer cells Reference allele        1586
+1452 n_cell=3157 Normal cells   Variant allele        3280
+1453 n_cell=3157 Normal cells Reference allele        3280
+[1] "ATM-p-Q628fs-WT"
+[1] "ATM-p-Q628fs-ALT-T"
+             probe_site probe_proportion        sample.ID probe_count
+145  ATM-p-Q628fs-ALT-T        0.8814628 HT305B1-S1H5A1U1        1398
+1451 ATM-p-Q628fs-ALT-T        0.1185372 HT305B1-S1H5A1U1         188
+1452 ATM-p-Q628fs-ALT-T        0.6533537 HT305B1-S1H5A1U1        2143
+1453 ATM-p-Q628fs-ALT-T        0.3466463 HT305B1-S1H5A1U1        1137
+      cell_count    cell_type     probe_target probe_total
+145  n_cell=1550 Cancer cells   Variant allele        1586
+1451 n_cell=1550 Cancer cells Reference allele        1586
+1452 n_cell=3157 Normal cells   Variant allele        3280
+1453 n_cell=3157 Normal cells Reference allele        3280
+[1] "ATM-p-Q628fs-WT"
+[1] "HT308B1-S1H5A4U1"
+[1] "ATM-p-Y1124---ALT-G" "ATM-p-Y1124---WT"   
+[1] "ATM-p-Y1124---ALT-G"
+              probe_site probe_proportion        sample.ID probe_count
+178  ATM-p-Y1124---ALT-G        0.7142857 HT308B1-S1H5A4U1          45
+1781 ATM-p-Y1124---ALT-G        0.2857143 HT308B1-S1H5A4U1          18
+1782 ATM-p-Y1124---ALT-G        0.2313433 HT308B1-S1H5A4U1          31
+1783 ATM-p-Y1124---ALT-G        0.7686567 HT308B1-S1H5A4U1         103
+     cell_count    cell_type     probe_target probe_total
+178   n_cell=62 Cancer cells   Variant allele          63
+1781  n_cell=62 Cancer cells Reference allele          63
+1782 n_cell=133 Normal cells   Variant allele         134
+1783 n_cell=133 Normal cells Reference allele         134
+[1] "ATM-p-Y1124---WT"
+[1] "ATM-p-Y1124---ALT-G"
+              probe_site probe_proportion        sample.ID probe_count
+178  ATM-p-Y1124---ALT-G        0.7142857 HT308B1-S1H5A4U1          45
+1781 ATM-p-Y1124---ALT-G        0.2857143 HT308B1-S1H5A4U1          18
+1782 ATM-p-Y1124---ALT-G        0.2313433 HT308B1-S1H5A4U1          31
+1783 ATM-p-Y1124---ALT-G        0.7686567 HT308B1-S1H5A4U1         103
+     cell_count    cell_type     probe_target probe_total
+178   n_cell=62 Cancer cells   Variant allele          63
+1781  n_cell=62 Cancer cells Reference allele          63
+1782 n_cell=133 Normal cells   Variant allele         134
+1783 n_cell=133 Normal cells Reference allele         134
+[1] "ATM-p-Y1124---WT"
+[1] "HT425B1-S1H1Fp1U1"
+[1] "FANCA-p-E1240fs-ALT--" "FANCA-p-E1240fs-WT"    "PIK3CA-p-E545K-ALT-A" 
+[4] "PIK3CA-p-E545K-WT"    
+[1] "FANCA-p-E1240fs-ALT--"
+                probe_site probe_proportion         sample.ID probe_count
+339  FANCA-p-E1240fs-ALT--        0.4066390 HT425B1-S1H1Fp1U1         196
+3391 FANCA-p-E1240fs-ALT--        0.5933610 HT425B1-S1H1Fp1U1         286
+3392 FANCA-p-E1240fs-ALT--        0.6431655 HT425B1-S1H1Fp1U1         447
+3393 FANCA-p-E1240fs-ALT--        0.3568345 HT425B1-S1H1Fp1U1         248
+     cell_count    cell_type     probe_target probe_total
+339  n_cell=466 Cancer cells   Variant allele         482
+3391 n_cell=466 Cancer cells Reference allele         482
+3392 n_cell=687 Normal cells   Variant allele         695
+3393 n_cell=687 Normal cells Reference allele         695
+[1] "FANCA-p-E1240fs-WT"
+[1] "PIK3CA-p-E545K-ALT-A"
+                probe_site probe_proportion         sample.ID probe_count
+1171  PIK3CA-p-E545K-ALT-A       0.82191781 HT425B1-S1H1Fp1U1         660
+11711 PIK3CA-p-E545K-ALT-A       0.17808219 HT425B1-S1H1Fp1U1         143
+11712 PIK3CA-p-E545K-ALT-A       0.09165303 HT425B1-S1H1Fp1U1          56
+11713 PIK3CA-p-E545K-ALT-A       0.90834697 HT425B1-S1H1Fp1U1         555
+      cell_count    cell_type     probe_target probe_total
+1171  n_cell=778 Cancer cells   Variant allele         803
+11711 n_cell=778 Cancer cells Reference allele         803
+11712 n_cell=604 Normal cells   Variant allele         611
+11713 n_cell=604 Normal cells Reference allele         611
+[1] "PIK3CA-p-E545K-WT"
+NULL
+[1] "FANCA-p-E1240fs-ALT--"
+                probe_site probe_proportion         sample.ID probe_count
+339  FANCA-p-E1240fs-ALT--        0.4066390 HT425B1-S1H1Fp1U1         196
+3391 FANCA-p-E1240fs-ALT--        0.5933610 HT425B1-S1H1Fp1U1         286
+3392 FANCA-p-E1240fs-ALT--        0.6431655 HT425B1-S1H1Fp1U1         447
+3393 FANCA-p-E1240fs-ALT--        0.3568345 HT425B1-S1H1Fp1U1         248
+     cell_count    cell_type     probe_target probe_total
+339  n_cell=466 Cancer cells   Variant allele         482
+3391 n_cell=466 Cancer cells Reference allele         482
+3392 n_cell=687 Normal cells   Variant allele         695
+3393 n_cell=687 Normal cells Reference allele         695
+[1] "FANCA-p-E1240fs-WT"
+[1] "PIK3CA-p-E545K-ALT-A"
+                probe_site probe_proportion         sample.ID probe_count
+1171  PIK3CA-p-E545K-ALT-A       0.82191781 HT425B1-S1H1Fp1U1         660
+11711 PIK3CA-p-E545K-ALT-A       0.17808219 HT425B1-S1H1Fp1U1         143
+11712 PIK3CA-p-E545K-ALT-A       0.09165303 HT425B1-S1H1Fp1U1          56
+11713 PIK3CA-p-E545K-ALT-A       0.90834697 HT425B1-S1H1Fp1U1         555
+      cell_count    cell_type     probe_target probe_total
+1171  n_cell=778 Cancer cells   Variant allele         803
+11711 n_cell=778 Cancer cells Reference allele         803
+11712 n_cell=604 Normal cells   Variant allele         611
+11713 n_cell=604 Normal cells Reference allele         611
+[1] "PIK3CA-p-E545K-WT"
+NULL
+[1] "HT65B1-H1A1A4U1"
+[1] "TP53-p-Y220C-ALT-C" "TP53-p-Y220C-WT"   
+[1] "TP53-p-Y220C-ALT-C"
+              probe_site probe_proportion       sample.ID probe_count
+1300  TP53-p-Y220C-ALT-C       0.93289689 HT65B1-H1A1A4U1        1140
+13001 TP53-p-Y220C-ALT-C       0.06710311 HT65B1-H1A1A4U1          82
+13002 TP53-p-Y220C-ALT-C       0.12011577 HT65B1-H1A1A4U1         166
+13003 TP53-p-Y220C-ALT-C       0.87988423 HT65B1-H1A1A4U1        1216
+       cell_count    cell_type     probe_target probe_total
+1300  n_cell=1176 Cancer cells   Variant allele        1222
+13001 n_cell=1176 Cancer cells Reference allele        1222
+13002 n_cell=1340 Normal cells   Variant allele        1382
+13003 n_cell=1340 Normal cells Reference allele        1382
+[1] "TP53-p-Y220C-WT"
+[1] "TP53-p-Y220C-ALT-C"
+              probe_site probe_proportion       sample.ID probe_count
+1300  TP53-p-Y220C-ALT-C       0.93289689 HT65B1-H1A1A4U1        1140
+13001 TP53-p-Y220C-ALT-C       0.06710311 HT65B1-H1A1A4U1          82
+13002 TP53-p-Y220C-ALT-C       0.12011577 HT65B1-H1A1A4U1         166
+13003 TP53-p-Y220C-ALT-C       0.87988423 HT65B1-H1A1A4U1        1216
+       cell_count    cell_type     probe_target probe_total
+1300  n_cell=1176 Cancer cells   Variant allele        1222
+13001 n_cell=1176 Cancer cells Reference allele        1222
+13002 n_cell=1340 Normal cells   Variant allele        1382
+13003 n_cell=1340 Normal cells Reference allele        1382
+[1] "TP53-p-Y220C-WT"
+[1] "WUPE82256U1-Fp1U1"
+[1] "DIS3-p-E429Q-ALT-G" "DIS3-p-E429Q-WT"   
+[1] "DIS3-p-E429Q-ALT-G"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+565  DIS3-p-E429Q-ALT-G       0.94915254 WUPE82256U1-Fp1U1          56  n_cell=58
+5651 DIS3-p-E429Q-ALT-G       0.05084746 WUPE82256U1-Fp1U1           3  n_cell=58
+5652 DIS3-p-E429Q-ALT-G       0.44210526 WUPE82256U1-Fp1U1          84 n_cell=186
+5653 DIS3-p-E429Q-ALT-G       0.55789474 WUPE82256U1-Fp1U1         106 n_cell=186
+        cell_type     probe_target probe_total
+565  Cancer cells   Variant allele          59
+5651 Cancer cells Reference allele          59
+5652 Normal cells   Variant allele         190
+5653 Normal cells Reference allele         190
+[1] "DIS3-p-E429Q-WT"
+[1] "DIS3-p-E429Q-ALT-G"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+565  DIS3-p-E429Q-ALT-G       0.94915254 WUPE82256U1-Fp1U1          56  n_cell=58
+5651 DIS3-p-E429Q-ALT-G       0.05084746 WUPE82256U1-Fp1U1           3  n_cell=58
+5652 DIS3-p-E429Q-ALT-G       0.44210526 WUPE82256U1-Fp1U1          84 n_cell=186
+5653 DIS3-p-E429Q-ALT-G       0.55789474 WUPE82256U1-Fp1U1         106 n_cell=186
+        cell_type     probe_target probe_total
+565  Cancer cells   Variant allele          59
+5651 Cancer cells Reference allele          59
+5652 Normal cells   Variant allele         190
+5653 Normal cells Reference allele         190
+[1] "DIS3-p-E429Q-WT"
+[1] "WUPE25723U1-Fp1U1"
+[1] "DIS3-p-R780K-ALT-T" "DIS3-p-R780K-WT"   
+[1] "DIS3-p-R780K-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+406  DIS3-p-R780K-ALT-T        0.8181818 WUPE25723U1-Fp1U1          18  n_cell=22
+4061 DIS3-p-R780K-ALT-T        0.1818182 WUPE25723U1-Fp1U1           4  n_cell=22
+4062 DIS3-p-R780K-ALT-T        0.2368421 WUPE25723U1-Fp1U1           9  n_cell=37
+4063 DIS3-p-R780K-ALT-T        0.7631579 WUPE25723U1-Fp1U1          29  n_cell=37
+        cell_type     probe_target probe_total
+406  Cancer cells   Variant allele          22
+4061 Cancer cells Reference allele          22
+4062 Normal cells   Variant allele          38
+4063 Normal cells Reference allele          38
+[1] "DIS3-p-R780K-WT"
+[1] "DIS3-p-R780K-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+406  DIS3-p-R780K-ALT-T        0.8181818 WUPE25723U1-Fp1U1          18  n_cell=22
+4061 DIS3-p-R780K-ALT-T        0.1818182 WUPE25723U1-Fp1U1           4  n_cell=22
+4062 DIS3-p-R780K-ALT-T        0.2368421 WUPE25723U1-Fp1U1           9  n_cell=37
+4063 DIS3-p-R780K-ALT-T        0.7631579 WUPE25723U1-Fp1U1          29  n_cell=37
+        cell_type     probe_target probe_total
+406  Cancer cells   Variant allele          22
+4061 Cancer cells Reference allele          22
+4062 Normal cells   Variant allele          38
+4063 Normal cells Reference allele          38
+[1] "DIS3-p-R780K-WT"
+[1] "WUPE08092A1-S1H3U1"
+[1] "APC-p-R213---ALT-A"       "APC-p-R213---WT"         
+[3] "APC-p-T1292Rfs--13-ALT--" "APC-p-R1114---WT"        
+[1] "APC-p-R213---ALT-A"
+            probe_site probe_proportion       sample.ID probe_count cell_count
+23  APC-p-R213---ALT-A        0.3278689 WUPE08092A1-S1H3U1          40 n_cell=122
+231 APC-p-R213---ALT-A        0.6721311 WUPE08092A1-S1H3U1          82 n_cell=122
+232 APC-p-R213---ALT-A        0.2500000 WUPE08092A1-S1H3U1          27 n_cell=107
+233 APC-p-R213---ALT-A        0.7500000 WUPE08092A1-S1H3U1          81 n_cell=107
+       cell_type     probe_target probe_total
+23  Cancer cells   Variant allele         122
+231 Cancer cells Reference allele         122
+232 Normal cells   Variant allele         108
+233 Normal cells Reference allele         108
+[1] "APC-p-R213---WT"
+[1] "APC-p-T1292Rfs--13-ALT--"
+                  probe_site probe_proportion       sample.ID probe_count
+87  APC-p-T1292Rfs--13-ALT--       0.07142857 WUPE08092A1-S1H3U1          26
+871 APC-p-T1292Rfs--13-ALT--       0.92857143 WUPE08092A1-S1H3U1         338
+872 APC-p-T1292Rfs--13-ALT--       0.01204819 WUPE08092A1-S1H3U1           3
+873 APC-p-T1292Rfs--13-ALT--       0.98795181 WUPE08092A1-S1H3U1         246
+    cell_count    cell_type     probe_target probe_total
+87  n_cell=358 Cancer cells   Variant allele         364
+871 n_cell=358 Cancer cells Reference allele         364
+872 n_cell=245 Normal cells   Variant allele         249
+873 n_cell=245 Normal cells Reference allele         249
+[1] "APC-p-R1114---WT"
+NULL
+[1] "APC-p-R213---ALT-A"
+            probe_site probe_proportion       sample.ID probe_count cell_count
+23  APC-p-R213---ALT-A        0.3278689 WUPE08092A1-S1H3U1          40 n_cell=122
+231 APC-p-R213---ALT-A        0.6721311 WUPE08092A1-S1H3U1          82 n_cell=122
+232 APC-p-R213---ALT-A        0.2500000 WUPE08092A1-S1H3U1          27 n_cell=107
+233 APC-p-R213---ALT-A        0.7500000 WUPE08092A1-S1H3U1          81 n_cell=107
+       cell_type     probe_target probe_total
+23  Cancer cells   Variant allele         122
+231 Cancer cells Reference allele         122
+232 Normal cells   Variant allele         108
+233 Normal cells Reference allele         108
+[1] "APC-p-R213---WT"
+[1] "APC-p-T1292Rfs--13-ALT--"
+                  probe_site probe_proportion       sample.ID probe_count
+87  APC-p-T1292Rfs--13-ALT--       0.07142857 WUPE08092A1-S1H3U1          26
+871 APC-p-T1292Rfs--13-ALT--       0.92857143 WUPE08092A1-S1H3U1         338
+872 APC-p-T1292Rfs--13-ALT--       0.01204819 WUPE08092A1-S1H3U1           3
+873 APC-p-T1292Rfs--13-ALT--       0.98795181 WUPE08092A1-S1H3U1         246
+    cell_count    cell_type     probe_target probe_total
+87  n_cell=358 Cancer cells   Variant allele         364
+871 n_cell=358 Cancer cells Reference allele         364
+872 n_cell=245 Normal cells   Variant allele         249
+873 n_cell=245 Normal cells Reference allele         249
+[1] "APC-p-R1114---WT"
+NULL
+[1] "WUPE68972U1-Fp1U1"
+[1] "IDH1-p-R132H-ALT-T" "IDH1-p-R132C-WT"    "IDH1-p-R132C-ALT-A"
+[1] "IDH1-p-R132H-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+728  IDH1-p-R132H-ALT-T        0.7410714 WUPE68972U1-Fp1U1          83 n_cell=112
+7281 IDH1-p-R132H-ALT-T        0.2589286 WUPE68972U1-Fp1U1          29 n_cell=112
+7282 IDH1-p-R132H-ALT-T        0.5795455 WUPE68972U1-Fp1U1         153 n_cell=263
+7283 IDH1-p-R132H-ALT-T        0.4204545 WUPE68972U1-Fp1U1         111 n_cell=263
+        cell_type     probe_target probe_total
+728  Cancer cells   Variant allele         112
+7281 Cancer cells Reference allele         112
+7282 Normal cells   Variant allele         264
+7283 Normal cells Reference allele         264
+[1] "IDH1-p-R132C-WT"
+[1] "IDH1-p-R132C-ALT-A"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+696  IDH1-p-R132C-ALT-A       0.09375000 WUPE68972U1-Fp1U1           3  n_cell=32
+6961 IDH1-p-R132C-ALT-A       0.90625000 WUPE68972U1-Fp1U1          29  n_cell=32
+6962 IDH1-p-R132C-ALT-A       0.09016393 WUPE68972U1-Fp1U1          11 n_cell=121
+6963 IDH1-p-R132C-ALT-A       0.90983607 WUPE68972U1-Fp1U1         111 n_cell=121
+        cell_type     probe_target probe_total
+696  Cancer cells   Variant allele          32
+6961 Cancer cells Reference allele          32
+6962 Normal cells   Variant allele         122
+6963 Normal cells Reference allele         122
+NULL
+[1] "IDH1-p-R132H-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+728  IDH1-p-R132H-ALT-T        0.7410714 WUPE68972U1-Fp1U1          83 n_cell=112
+7281 IDH1-p-R132H-ALT-T        0.2589286 WUPE68972U1-Fp1U1          29 n_cell=112
+7282 IDH1-p-R132H-ALT-T        0.5795455 WUPE68972U1-Fp1U1         153 n_cell=263
+7283 IDH1-p-R132H-ALT-T        0.4204545 WUPE68972U1-Fp1U1         111 n_cell=263
+        cell_type     probe_target probe_total
+728  Cancer cells   Variant allele         112
+7281 Cancer cells Reference allele         112
+7282 Normal cells   Variant allele         264
+7283 Normal cells Reference allele         264
+[1] "IDH1-p-R132C-WT"
+[1] "IDH1-p-R132C-ALT-A"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+696  IDH1-p-R132C-ALT-A       0.09375000 WUPE68972U1-Fp1U1           3  n_cell=32
+6961 IDH1-p-R132C-ALT-A       0.90625000 WUPE68972U1-Fp1U1          29  n_cell=32
+6962 IDH1-p-R132C-ALT-A       0.09016393 WUPE68972U1-Fp1U1          11 n_cell=121
+6963 IDH1-p-R132C-ALT-A       0.90983607 WUPE68972U1-Fp1U1         111 n_cell=121
+        cell_type     probe_target probe_total
+696  Cancer cells   Variant allele          32
+6961 Cancer cells Reference allele          32
+6962 Normal cells   Variant allele         122
+6963 Normal cells Reference allele         122
+NULL
+[1] "WUPE38758U1-Fp1U1"
+[1] "KRAS-p-Q61H-ALT-G" "KRAS-p-Q61H-WT"   
+[1] "KRAS-p-Q61H-ALT-G"
+            probe_site probe_proportion      sample.ID probe_count cell_count
+953  KRAS-p-Q61H-ALT-G       0.18181818 WUPE38758U1-Fp1U1           4  n_cell=22
+9531 KRAS-p-Q61H-ALT-G       0.81818182 WUPE38758U1-Fp1U1          18  n_cell=22
+9532 KRAS-p-Q61H-ALT-G       0.06944444 WUPE38758U1-Fp1U1           5  n_cell=70
+9533 KRAS-p-Q61H-ALT-G       0.93055556 WUPE38758U1-Fp1U1          67  n_cell=70
+        cell_type     probe_target probe_total
+953  Cancer cells   Variant allele          22
+9531 Cancer cells Reference allele          22
+9532 Normal cells   Variant allele          72
+9533 Normal cells Reference allele          72
+[1] "KRAS-p-Q61H-WT"
+[1] "KRAS-p-Q61H-ALT-G"
+            probe_site probe_proportion      sample.ID probe_count cell_count
+953  KRAS-p-Q61H-ALT-G       0.18181818 WUPE38758U1-Fp1U1           4  n_cell=22
+9531 KRAS-p-Q61H-ALT-G       0.81818182 WUPE38758U1-Fp1U1          18  n_cell=22
+9532 KRAS-p-Q61H-ALT-G       0.06944444 WUPE38758U1-Fp1U1           5  n_cell=70
+9533 KRAS-p-Q61H-ALT-G       0.93055556 WUPE38758U1-Fp1U1          67  n_cell=70
+        cell_type     probe_target probe_total
+953  Cancer cells   Variant allele          22
+9531 Cancer cells Reference allele          22
+9532 Normal cells   Variant allele          72
+9533 Normal cells Reference allele          72
+[1] "KRAS-p-Q61H-WT"
+[1] "WUPE62598U1-Fp2U1"
+[1] "IRF4-p-Q300---ALT-T" "IRF4-p-Q300---WT"   
+[1] "IRF4-p-Q300---ALT-T"
+              probe_site probe_proportion      sample.ID probe_count
+794  IRF4-p-Q300---ALT-T        0.8304204 WUPE62598U1-Fp2U1        7507
+7941 IRF4-p-Q300---ALT-T        0.1695796 WUPE62598U1-Fp2U1        1533
+7942 IRF4-p-Q300---ALT-T        0.8428720 WUPE62598U1-Fp2U1         810
+7943 IRF4-p-Q300---ALT-T        0.1571280 WUPE62598U1-Fp2U1         151
+      cell_count    cell_type     probe_target probe_total
+794  n_cell=7594 Cancer cells   Variant allele        9040
+7941 n_cell=7594 Cancer cells Reference allele        9040
+7942  n_cell=818 Normal cells   Variant allele         961
+7943  n_cell=818 Normal cells Reference allele         961
+[1] "IRF4-p-Q300---WT"
+[1] "IRF4-p-Q300---ALT-T"
+              probe_site probe_proportion      sample.ID probe_count
+794  IRF4-p-Q300---ALT-T        0.8304204 WUPE62598U1-Fp2U1        7507
+7941 IRF4-p-Q300---ALT-T        0.1695796 WUPE62598U1-Fp2U1        1533
+7942 IRF4-p-Q300---ALT-T        0.8428720 WUPE62598U1-Fp2U1         810
+7943 IRF4-p-Q300---ALT-T        0.1571280 WUPE62598U1-Fp2U1         151
+      cell_count    cell_type     probe_target probe_total
+794  n_cell=7594 Cancer cells   Variant allele        9040
+7941 n_cell=7594 Cancer cells Reference allele        9040
+7942  n_cell=818 Normal cells   Variant allele         961
+7943  n_cell=818 Normal cells Reference allele         961
+[1] "IRF4-p-Q300---WT"
+[1] "WUPE28077U1-Fp1U1"
+[1] "BRAF-p-V600E-ALT-T" "BRAF-p-V600E-WT"   
+[1] "BRAF-p-V600E-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+283  BRAF-p-V600E-ALT-T        0.8543689 WUPE28077U1-Fp1U1          88 n_cell=102
+2831 BRAF-p-V600E-ALT-T        0.1456311 WUPE28077U1-Fp1U1          15 n_cell=102
+2832 BRAF-p-V600E-ALT-T        0.5449102 WUPE28077U1-Fp1U1          91 n_cell=166
+2833 BRAF-p-V600E-ALT-T        0.4550898 WUPE28077U1-Fp1U1          76 n_cell=166
+        cell_type     probe_target probe_total
+283  Cancer cells   Variant allele         103
+2831 Cancer cells Reference allele         103
+2832 Normal cells   Variant allele         167
+2833 Normal cells Reference allele         167
+[1] "BRAF-p-V600E-WT"
+[1] "BRAF-p-V600E-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+283  BRAF-p-V600E-ALT-T        0.8543689 WUPE28077U1-Fp1U1          88 n_cell=102
+2831 BRAF-p-V600E-ALT-T        0.1456311 WUPE28077U1-Fp1U1          15 n_cell=102
+2832 BRAF-p-V600E-ALT-T        0.5449102 WUPE28077U1-Fp1U1          91 n_cell=166
+2833 BRAF-p-V600E-ALT-T        0.4550898 WUPE28077U1-Fp1U1          76 n_cell=166
+        cell_type     probe_target probe_total
+283  Cancer cells   Variant allele         103
+2831 Cancer cells Reference allele         103
+2832 Normal cells   Variant allele         167
+2833 Normal cells Reference allele         167
+[1] "BRAF-p-V600E-WT"
+[1] "WUPE04916U1-Fp1U1"
+[1] "DLGAP4-p-Q689---ALT-T" "DLGAP4-p-Q689---WT"   
+[1] "DLGAP4-p-Q689---ALT-T"
+                probe_site probe_proportion     sample.ID probe_count
+668  DLGAP4-p-Q689---ALT-T        0.5895522 WUPE04916U1-Fp1U1          79
+6681 DLGAP4-p-Q689---ALT-T        0.4104478 WUPE04916U1-Fp1U1          55
+6682 DLGAP4-p-Q689---ALT-T        0.2487562 WUPE04916U1-Fp1U1          50
+6683 DLGAP4-p-Q689---ALT-T        0.7512438 WUPE04916U1-Fp1U1         151
+     cell_count    cell_type     probe_target probe_total
+668  n_cell=126 Cancer cells   Variant allele         134
+6681 n_cell=126 Cancer cells Reference allele         134
+6682 n_cell=197 Normal cells   Variant allele         201
+6683 n_cell=197 Normal cells Reference allele         201
+[1] "DLGAP4-p-Q689---WT"
+[1] "DLGAP4-p-Q689---ALT-T"
+                probe_site probe_proportion     sample.ID probe_count
+668  DLGAP4-p-Q689---ALT-T        0.5895522 WUPE04916U1-Fp1U1          79
+6681 DLGAP4-p-Q689---ALT-T        0.4104478 WUPE04916U1-Fp1U1          55
+6682 DLGAP4-p-Q689---ALT-T        0.2487562 WUPE04916U1-Fp1U1          50
+6683 DLGAP4-p-Q689---ALT-T        0.7512438 WUPE04916U1-Fp1U1         151
+     cell_count    cell_type     probe_target probe_total
+668  n_cell=126 Cancer cells   Variant allele         134
+6681 n_cell=126 Cancer cells Reference allele         134
+6682 n_cell=197 Normal cells   Variant allele         201
+6683 n_cell=197 Normal cells Reference allele         201
+[1] "DLGAP4-p-Q689---WT"
+[1] "SP001P1-Fp1U1"
+[1] "GNAS-p-R201C-ALT-T" "GNAS-p-R201C-WT"    "KRAS-p-G12D-ALT-T" 
+[4] "KRAS-p-G12V-WT"     "KRAS-p-G12V-ALT-A" 
+[1] "GNAS-p-R201C-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count
+637  GNAS-p-R201C-ALT-T        0.6205098 SP001P1-Fp1U1       15823
+6371 GNAS-p-R201C-ALT-T        0.3794902 SP001P1-Fp1U1        9677
+6372 GNAS-p-R201C-ALT-T        0.1808415 SP001P1-Fp1U1        5858
+6373 GNAS-p-R201C-ALT-T        0.8191585 SP001P1-Fp1U1       26535
+       cell_count    cell_type     probe_target probe_total
+637  n_cell=22884 Cancer cells   Variant allele       25500
+6371 n_cell=22884 Cancer cells Reference allele       25500
+6372 n_cell=30158 Normal cells   Variant allele       32393
+6373 n_cell=30158 Normal cells Reference allele       32393
+[1] "GNAS-p-R201C-WT"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion      sample.ID probe_count   cell_count
+861  KRAS-p-G12D-ALT-T        0.6412323 SP001P1-Fp1U1        7639 n_cell=11314
+8611 KRAS-p-G12D-ALT-T        0.3587677 SP001P1-Fp1U1        4274 n_cell=11314
+8612 KRAS-p-G12D-ALT-T        0.3421592 SP001P1-Fp1U1        2339  n_cell=6673
+8613 KRAS-p-G12D-ALT-T        0.6578408 SP001P1-Fp1U1        4497  n_cell=6673
+        cell_type     probe_target probe_total
+861  Cancer cells   Variant allele       11913
+8611 Cancer cells Reference allele       11913
+8612 Normal cells   Variant allele        6836
+8613 Normal cells Reference allele        6836
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion      sample.ID probe_count  cell_count
+893  KRAS-p-G12V-ALT-A       0.03847019 SP001P1-Fp1U1         171 n_cell=4359
+8931 KRAS-p-G12V-ALT-A       0.96152981 SP001P1-Fp1U1        4274 n_cell=4359
+8932 KRAS-p-G12V-ALT-A       0.03601286 SP001P1-Fp1U1         168 n_cell=4588
+8933 KRAS-p-G12V-ALT-A       0.96398714 SP001P1-Fp1U1        4497 n_cell=4588
+        cell_type     probe_target probe_total
+893  Cancer cells   Variant allele        4445
+8931 Cancer cells Reference allele        4445
+8932 Normal cells   Variant allele        4665
+8933 Normal cells Reference allele        4665
+NULL
+NULL
+[1] "GNAS-p-R201C-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count
+637  GNAS-p-R201C-ALT-T        0.6205098 SP001P1-Fp1U1       15823
+6371 GNAS-p-R201C-ALT-T        0.3794902 SP001P1-Fp1U1        9677
+6372 GNAS-p-R201C-ALT-T        0.1808415 SP001P1-Fp1U1        5858
+6373 GNAS-p-R201C-ALT-T        0.8191585 SP001P1-Fp1U1       26535
+       cell_count    cell_type     probe_target probe_total
+637  n_cell=22884 Cancer cells   Variant allele       25500
+6371 n_cell=22884 Cancer cells Reference allele       25500
+6372 n_cell=30158 Normal cells   Variant allele       32393
+6373 n_cell=30158 Normal cells Reference allele       32393
+[1] "GNAS-p-R201C-WT"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion      sample.ID probe_count   cell_count
+861  KRAS-p-G12D-ALT-T        0.6412323 SP001P1-Fp1U1        7639 n_cell=11314
+8611 KRAS-p-G12D-ALT-T        0.3587677 SP001P1-Fp1U1        4274 n_cell=11314
+8612 KRAS-p-G12D-ALT-T        0.3421592 SP001P1-Fp1U1        2339  n_cell=6673
+8613 KRAS-p-G12D-ALT-T        0.6578408 SP001P1-Fp1U1        4497  n_cell=6673
+        cell_type     probe_target probe_total
+861  Cancer cells   Variant allele       11913
+8611 Cancer cells Reference allele       11913
+8612 Normal cells   Variant allele        6836
+8613 Normal cells Reference allele        6836
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion      sample.ID probe_count  cell_count
+893  KRAS-p-G12V-ALT-A       0.03847019 SP001P1-Fp1U1         171 n_cell=4359
+8931 KRAS-p-G12V-ALT-A       0.96152981 SP001P1-Fp1U1        4274 n_cell=4359
+8932 KRAS-p-G12V-ALT-A       0.03601286 SP001P1-Fp1U1         168 n_cell=4588
+8933 KRAS-p-G12V-ALT-A       0.96398714 SP001P1-Fp1U1        4497 n_cell=4588
+        cell_type     probe_target probe_total
+893  Cancer cells   Variant allele        4445
+8931 Cancer cells Reference allele        4445
+8932 Normal cells   Variant allele        4665
+8933 Normal cells Reference allele        4665
+NULL
+NULL
+[1] "WUPE86238U1-Fp1U1"
+[1] "NRAS-p-Q61H-ALT-G" "NRAS-p-Q61H-WT"   
+[1] "NRAS-p-Q61H-ALT-G"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+1118  NRAS-p-Q61H-ALT-G        0.5828571 WUPE86238U1-Fp1U1         102 n_cell=171
+11181 NRAS-p-Q61H-ALT-G        0.4171429 WUPE86238U1-Fp1U1          73 n_cell=171
+11182 NRAS-p-Q61H-ALT-G        0.3823529 WUPE86238U1-Fp1U1          39  n_cell=99
+11183 NRAS-p-Q61H-ALT-G        0.6176471 WUPE86238U1-Fp1U1          63  n_cell=99
+         cell_type     probe_target probe_total
+1118  Cancer cells   Variant allele         175
+11181 Cancer cells Reference allele         175
+11182 Normal cells   Variant allele         102
+11183 Normal cells Reference allele         102
+[1] "NRAS-p-Q61H-WT"
+[1] "NRAS-p-Q61H-ALT-G"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+1118  NRAS-p-Q61H-ALT-G        0.5828571 WUPE86238U1-Fp1U1         102 n_cell=171
+11181 NRAS-p-Q61H-ALT-G        0.4171429 WUPE86238U1-Fp1U1          73 n_cell=171
+11182 NRAS-p-Q61H-ALT-G        0.3823529 WUPE86238U1-Fp1U1          39  n_cell=99
+11183 NRAS-p-Q61H-ALT-G        0.6176471 WUPE86238U1-Fp1U1          63  n_cell=99
+         cell_type     probe_target probe_total
+1118  Cancer cells   Variant allele         175
+11181 Cancer cells Reference allele         175
+11182 Normal cells   Variant allele         102
+11183 Normal cells Reference allele         102
+[1] "NRAS-p-Q61H-WT"
+[1] "SN105H1-Ma1Fp2-5U1"
+[1] "DNMT3A-p-R882C-ALT-A" "DNMT3A-p-R882C-WT"   
+[1] "DNMT3A-p-R882C-ALT-A"
+               probe_site probe_proportion          sample.ID probe_count
+479  DNMT3A-p-R882C-ALT-A       0.00000000 SN105H1-Ma1Fp2-5U1           0
+4791 DNMT3A-p-R882C-ALT-A       1.00000000 SN105H1-Ma1Fp2-5U1           4
+4792 DNMT3A-p-R882C-ALT-A       0.04411765 SN105H1-Ma1Fp2-5U1           9
+4793 DNMT3A-p-R882C-ALT-A       0.95588235 SN105H1-Ma1Fp2-5U1         195
+     cell_count    cell_type     probe_target probe_total
+479    n_cell=4 Cancer cells   Variant allele           4
+4791   n_cell=4 Cancer cells Reference allele           4
+4792 n_cell=199 Normal cells   Variant allele         204
+4793 n_cell=199 Normal cells Reference allele         204
+[1] "DNMT3A-p-R882C-WT"
+[1] "DNMT3A-p-R882C-ALT-A"
+               probe_site probe_proportion          sample.ID probe_count
+479  DNMT3A-p-R882C-ALT-A       0.00000000 SN105H1-Ma1Fp2-5U1           0
+4791 DNMT3A-p-R882C-ALT-A       1.00000000 SN105H1-Ma1Fp2-5U1           4
+4792 DNMT3A-p-R882C-ALT-A       0.04411765 SN105H1-Ma1Fp2-5U1           9
+4793 DNMT3A-p-R882C-ALT-A       0.95588235 SN105H1-Ma1Fp2-5U1         195
+     cell_count    cell_type     probe_target probe_total
+479    n_cell=4 Cancer cells   Variant allele           4
+4791   n_cell=4 Cancer cells Reference allele           4
+4792 n_cell=199 Normal cells   Variant allele         204
+4793 n_cell=199 Normal cells Reference allele         204
+[1] "DNMT3A-p-R882C-WT"
+[1] "SN106H1-Ma1Fp2-7U1"
+[1] "DNMT3A-p-R882C-ALT-A" "DNMT3A-p-R882C-WT"   
+[1] "DNMT3A-p-R882C-ALT-A"
+               probe_site probe_proportion          sample.ID probe_count
+480  DNMT3A-p-R882C-ALT-A       0.00000000 SN106H1-Ma1Fp2-7U1           0
+4801 DNMT3A-p-R882C-ALT-A       1.00000000 SN106H1-Ma1Fp2-7U1          13
+4802 DNMT3A-p-R882C-ALT-A       0.07692308 SN106H1-Ma1Fp2-7U1           9
+4803 DNMT3A-p-R882C-ALT-A       0.92307692 SN106H1-Ma1Fp2-7U1         108
+     cell_count    cell_type     probe_target probe_total
+480   n_cell=13 Cancer cells   Variant allele          13
+4801  n_cell=13 Cancer cells Reference allele          13
+4802 n_cell=117 Normal cells   Variant allele         117
+4803 n_cell=117 Normal cells Reference allele         117
+[1] "DNMT3A-p-R882C-WT"
+[1] "DNMT3A-p-R882C-ALT-A"
+               probe_site probe_proportion          sample.ID probe_count
+480  DNMT3A-p-R882C-ALT-A       0.00000000 SN106H1-Ma1Fp2-7U1           0
+4801 DNMT3A-p-R882C-ALT-A       1.00000000 SN106H1-Ma1Fp2-7U1          13
+4802 DNMT3A-p-R882C-ALT-A       0.07692308 SN106H1-Ma1Fp2-7U1           9
+4803 DNMT3A-p-R882C-ALT-A       0.92307692 SN106H1-Ma1Fp2-7U1         108
+     cell_count    cell_type     probe_target probe_total
+480   n_cell=13 Cancer cells   Variant allele          13
+4801  n_cell=13 Cancer cells Reference allele          13
+4802 n_cell=117 Normal cells   Variant allele         117
+4803 n_cell=117 Normal cells Reference allele         117
+[1] "DNMT3A-p-R882C-WT"
+[1] "C3L-01287-11Us2_1"
+[1] "BAP1-p-T93A-ALT-C" "BAP1-p-T93A-WT"   
+[1] "BAP1-p-T93A-ALT-C"
+             probe_site probe_proportion         sample.ID probe_count
+1025  BAP1-p-T93A-ALT-C        0.4482759 C3L-01287-11Us2_1          13
+10251 BAP1-p-T93A-ALT-C        0.5517241 C3L-01287-11Us2_1          16
+10252 BAP1-p-T93A-ALT-C        0.0197848 C3L-01287-11Us2_1          57
+10253 BAP1-p-T93A-ALT-C        0.9802152 C3L-01287-11Us2_1        2824
+       cell_count    cell_type     probe_target probe_total
+1025    n_cell=27 Cancer cells   Variant allele          29
+10251   n_cell=27 Cancer cells Reference allele          29
+10252 n_cell=2817 Normal cells   Variant allele        2881
+10253 n_cell=2817 Normal cells Reference allele        2881
+[1] "BAP1-p-T93A-WT"
+[1] "BAP1-p-T93A-ALT-C"
+             probe_site probe_proportion         sample.ID probe_count
+1025  BAP1-p-T93A-ALT-C        0.4482759 C3L-01287-11Us2_1          13
+10251 BAP1-p-T93A-ALT-C        0.5517241 C3L-01287-11Us2_1          16
+10252 BAP1-p-T93A-ALT-C        0.0197848 C3L-01287-11Us2_1          57
+10253 BAP1-p-T93A-ALT-C        0.9802152 C3L-01287-11Us2_1        2824
+       cell_count    cell_type     probe_target probe_total
+1025    n_cell=27 Cancer cells   Variant allele          29
+10251   n_cell=27 Cancer cells Reference allele          29
+10252 n_cell=2817 Normal cells   Variant allele        2881
+10253 n_cell=2817 Normal cells Reference allele        2881
+[1] "BAP1-p-T93A-WT"
+[1] "C3L-03372-12Us3_1"
+[1] "IDH1-p-R132C-ALT-A" "IDH1-p-R132C-WT"    "IDH1-p-R132H-ALT-T"
+[1] "IDH1-p-R132C-ALT-A"
+             probe_site probe_proportion         sample.ID probe_count
+674  IDH1-p-R132C-ALT-A        0.6960486 C3L-03372-12Us3_1         458
+6741 IDH1-p-R132C-ALT-A        0.3039514 C3L-03372-12Us3_1         200
+6742 IDH1-p-R132C-ALT-A        0.3070175 C3L-03372-12Us3_1          35
+6743 IDH1-p-R132C-ALT-A        0.6929825 C3L-03372-12Us3_1          79
+     cell_count    cell_type     probe_target probe_total
+674  n_cell=634 Cancer cells   Variant allele         658
+6741 n_cell=634 Cancer cells Reference allele         658
+6742 n_cell=110 Normal cells   Variant allele         114
+6743 n_cell=110 Normal cells Reference allele         114
+[1] "IDH1-p-R132C-WT"
+[1] "IDH1-p-R132H-ALT-T"
+             probe_site probe_proportion         sample.ID probe_count
+706  IDH1-p-R132H-ALT-T        0.3079585 C3L-03372-12Us3_1          89
+7061 IDH1-p-R132H-ALT-T        0.6920415 C3L-03372-12Us3_1         200
+7062 IDH1-p-R132H-ALT-T        0.3008850 C3L-03372-12Us3_1          34
+7063 IDH1-p-R132H-ALT-T        0.6991150 C3L-03372-12Us3_1          79
+     cell_count    cell_type     probe_target probe_total
+706  n_cell=287 Cancer cells   Variant allele         289
+7061 n_cell=287 Cancer cells Reference allele         289
+7062 n_cell=111 Normal cells   Variant allele         113
+7063 n_cell=111 Normal cells Reference allele         113
+NULL
+[1] "IDH1-p-R132C-ALT-A"
+             probe_site probe_proportion         sample.ID probe_count
+674  IDH1-p-R132C-ALT-A        0.6960486 C3L-03372-12Us3_1         458
+6741 IDH1-p-R132C-ALT-A        0.3039514 C3L-03372-12Us3_1         200
+6742 IDH1-p-R132C-ALT-A        0.3070175 C3L-03372-12Us3_1          35
+6743 IDH1-p-R132C-ALT-A        0.6929825 C3L-03372-12Us3_1          79
+     cell_count    cell_type     probe_target probe_total
+674  n_cell=634 Cancer cells   Variant allele         658
+6741 n_cell=634 Cancer cells Reference allele         658
+6742 n_cell=110 Normal cells   Variant allele         114
+6743 n_cell=110 Normal cells Reference allele         114
+[1] "IDH1-p-R132C-WT"
+[1] "IDH1-p-R132H-ALT-T"
+             probe_site probe_proportion         sample.ID probe_count
+706  IDH1-p-R132H-ALT-T        0.3079585 C3L-03372-12Us3_1          89
+7061 IDH1-p-R132H-ALT-T        0.6920415 C3L-03372-12Us3_1         200
+7062 IDH1-p-R132H-ALT-T        0.3008850 C3L-03372-12Us3_1          34
+7063 IDH1-p-R132H-ALT-T        0.6991150 C3L-03372-12Us3_1          79
+     cell_count    cell_type     probe_target probe_total
+706  n_cell=287 Cancer cells   Variant allele         289
+7061 n_cell=287 Cancer cells Reference allele         289
+7062 n_cell=111 Normal cells   Variant allele         113
+7063 n_cell=111 Normal cells Reference allele         113
+NULL
+[1] "C3N-00663-11U3"
+[1] "IDH1-p-R132H-ALT-T" "IDH1-p-R132C-WT"    "IDH1-p-R132C-ALT-A"
+[4] "TP53-p-R282W-ALT-A" "TP53-p-R282W-WT"   
+[1] "IDH1-p-R132H-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count  cell_count
+707  IDH1-p-R132H-ALT-T        0.8155515 C3N-00663-11U3        1804 n_cell=2122
+7071 IDH1-p-R132H-ALT-T        0.1844485 C3N-00663-11U3         408 n_cell=2122
+7072 IDH1-p-R132H-ALT-T        0.5526316 C3N-00663-11U3         315  n_cell=554
+7073 IDH1-p-R132H-ALT-T        0.4473684 C3N-00663-11U3         255  n_cell=554
+        cell_type     probe_target probe_total
+707  Cancer cells   Variant allele        2212
+7071 Cancer cells Reference allele        2212
+7072 Normal cells   Variant allele         570
+7073 Normal cells Reference allele         570
+[1] "IDH1-p-R132C-WT"
+[1] "IDH1-p-R132C-ALT-A"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+675  IDH1-p-R132C-ALT-A       0.09734513 C3N-00663-11U3          44 n_cell=446
+6751 IDH1-p-R132C-ALT-A       0.90265487 C3N-00663-11U3         408 n_cell=446
+6752 IDH1-p-R132C-ALT-A       0.08928571 C3N-00663-11U3          25 n_cell=271
+6753 IDH1-p-R132C-ALT-A       0.91071429 C3N-00663-11U3         255 n_cell=271
+        cell_type     probe_target probe_total
+675  Cancer cells   Variant allele         452
+6751 Cancer cells Reference allele         452
+6752 Normal cells   Variant allele         280
+6753 Normal cells Reference allele         280
+[1] "TP53-p-R282W-ALT-A"
+              probe_site probe_proportion      sample.ID probe_count cell_count
+1251  TP53-p-R282W-ALT-A       0.13630229 C3N-00663-11U3         101 n_cell=725
+12511 TP53-p-R282W-ALT-A       0.86369771 C3N-00663-11U3         640 n_cell=725
+12512 TP53-p-R282W-ALT-A       0.08943089 C3N-00663-11U3          22 n_cell=244
+12513 TP53-p-R282W-ALT-A       0.91056911 C3N-00663-11U3         224 n_cell=244
+         cell_type     probe_target probe_total
+1251  Cancer cells   Variant allele         741
+12511 Cancer cells Reference allele         741
+12512 Normal cells   Variant allele         246
+12513 Normal cells Reference allele         246
+[1] "TP53-p-R282W-WT"
+NULL
+[1] "IDH1-p-R132H-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count  cell_count
+707  IDH1-p-R132H-ALT-T        0.8155515 C3N-00663-11U3        1804 n_cell=2122
+7071 IDH1-p-R132H-ALT-T        0.1844485 C3N-00663-11U3         408 n_cell=2122
+7072 IDH1-p-R132H-ALT-T        0.5526316 C3N-00663-11U3         315  n_cell=554
+7073 IDH1-p-R132H-ALT-T        0.4473684 C3N-00663-11U3         255  n_cell=554
+        cell_type     probe_target probe_total
+707  Cancer cells   Variant allele        2212
+7071 Cancer cells Reference allele        2212
+7072 Normal cells   Variant allele         570
+7073 Normal cells Reference allele         570
+[1] "IDH1-p-R132C-WT"
+[1] "IDH1-p-R132C-ALT-A"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+675  IDH1-p-R132C-ALT-A       0.09734513 C3N-00663-11U3          44 n_cell=446
+6751 IDH1-p-R132C-ALT-A       0.90265487 C3N-00663-11U3         408 n_cell=446
+6752 IDH1-p-R132C-ALT-A       0.08928571 C3N-00663-11U3          25 n_cell=271
+6753 IDH1-p-R132C-ALT-A       0.91071429 C3N-00663-11U3         255 n_cell=271
+        cell_type     probe_target probe_total
+675  Cancer cells   Variant allele         452
+6751 Cancer cells Reference allele         452
+6752 Normal cells   Variant allele         280
+6753 Normal cells Reference allele         280
+[1] "TP53-p-R282W-ALT-A"
+              probe_site probe_proportion      sample.ID probe_count cell_count
+1251  TP53-p-R282W-ALT-A       0.13630229 C3N-00663-11U3         101 n_cell=725
+12511 TP53-p-R282W-ALT-A       0.86369771 C3N-00663-11U3         640 n_cell=725
+12512 TP53-p-R282W-ALT-A       0.08943089 C3N-00663-11U3          22 n_cell=244
+12513 TP53-p-R282W-ALT-A       0.91056911 C3N-00663-11U3         224 n_cell=244
+         cell_type     probe_target probe_total
+1251  Cancer cells   Variant allele         741
+12511 Cancer cells Reference allele         741
+12512 Normal cells   Variant allele         246
+12513 Normal cells Reference allele         246
+[1] "TP53-p-R282W-WT"
+NULL
+[1] "HT270P1-S1H1A1US2_1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+             probe_site probe_proportion           sample.ID probe_count
+1385  KRAS-p-G12D-ALT-T       0.98378378 HT270P1-S1H1A1US2_1         182
+13851 KRAS-p-G12D-ALT-T       0.01621622 HT270P1-S1H1A1US2_1           3
+13852 KRAS-p-G12D-ALT-T       0.38983051 HT270P1-S1H1A1US2_1          23
+13853 KRAS-p-G12D-ALT-T       0.61016949 HT270P1-S1H1A1US2_1          36
+      cell_count    cell_type     probe_target probe_total
+1385  n_cell=175 Cancer cells   Variant allele         185
+13851 n_cell=175 Cancer cells Reference allele         185
+13852  n_cell=58 Normal cells   Variant allele          59
+13853  n_cell=58 Normal cells Reference allele          59
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+             probe_site probe_proportion           sample.ID probe_count
+1383  KRAS-p-G12V-ALT-A        0.4000000 HT270P1-S1H1A1US2_1           2
+13831 KRAS-p-G12V-ALT-A        0.6000000 HT270P1-S1H1A1US2_1           3
+13832 KRAS-p-G12V-ALT-A        0.4098361 HT270P1-S1H1A1US2_1          25
+13833 KRAS-p-G12V-ALT-A        0.5901639 HT270P1-S1H1A1US2_1          36
+      cell_count    cell_type     probe_target probe_total
+1383    n_cell=5 Cancer cells   Variant allele           5
+13831   n_cell=5 Cancer cells Reference allele           5
+13832  n_cell=60 Normal cells   Variant allele          61
+13833  n_cell=60 Normal cells Reference allele          61
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+             probe_site probe_proportion           sample.ID probe_count
+1385  KRAS-p-G12D-ALT-T       0.98378378 HT270P1-S1H1A1US2_1         182
+13851 KRAS-p-G12D-ALT-T       0.01621622 HT270P1-S1H1A1US2_1           3
+13852 KRAS-p-G12D-ALT-T       0.38983051 HT270P1-S1H1A1US2_1          23
+13853 KRAS-p-G12D-ALT-T       0.61016949 HT270P1-S1H1A1US2_1          36
+      cell_count    cell_type     probe_target probe_total
+1385  n_cell=175 Cancer cells   Variant allele         185
+13851 n_cell=175 Cancer cells Reference allele         185
+13852  n_cell=58 Normal cells   Variant allele          59
+13853  n_cell=58 Normal cells Reference allele          59
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+             probe_site probe_proportion           sample.ID probe_count
+1383  KRAS-p-G12V-ALT-A        0.4000000 HT270P1-S1H1A1US2_1           2
+13831 KRAS-p-G12V-ALT-A        0.6000000 HT270P1-S1H1A1US2_1           3
+13832 KRAS-p-G12V-ALT-A        0.4098361 HT270P1-S1H1A1US2_1          25
+13833 KRAS-p-G12V-ALT-A        0.5901639 HT270P1-S1H1A1US2_1          36
+      cell_count    cell_type     probe_target probe_total
+1383    n_cell=5 Cancer cells   Variant allele           5
+13831   n_cell=5 Cancer cells Reference allele           5
+13832  n_cell=60 Normal cells   Variant allele          61
+13833  n_cell=60 Normal cells Reference allele          61
+NULL
+[1] "SP002C1-Fp1U2"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+1386  KRAS-p-G12D-ALT-T        0.3005952 SP002C1-Fp1U2         101 n_cell=335
+13861 KRAS-p-G12D-ALT-T        0.6994048 SP002C1-Fp1U2         235 n_cell=335
+13862 KRAS-p-G12D-ALT-T        0.1445783 SP002C1-Fp1U2          24 n_cell=166
+13863 KRAS-p-G12D-ALT-T        0.8554217 SP002C1-Fp1U2         142 n_cell=166
+         cell_type     probe_target probe_total
+1386  Cancer cells   Variant allele         336
+13861 Cancer cells Reference allele         336
+13862 Normal cells   Variant allele         166
+13863 Normal cells Reference allele         166
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+             probe_site probe_proportion      sample.ID probe_count  cell_count
+1384  KRAS-p-G12V-ALT-A       0.91971302 SP002C1-Fp1U2        2692 n_cell=2874
+13841 KRAS-p-G12V-ALT-A       0.08028698 SP002C1-Fp1U2         235 n_cell=2874
+13842 KRAS-p-G12V-ALT-A       0.56969697 SP002C1-Fp1U2         188  n_cell=328
+13843 KRAS-p-G12V-ALT-A       0.43030303 SP002C1-Fp1U2         142  n_cell=328
+         cell_type     probe_target probe_total
+1384  Cancer cells   Variant allele        2927
+13841 Cancer cells Reference allele        2927
+13842 Normal cells   Variant allele         330
+13843 Normal cells Reference allele         330
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+             probe_site probe_proportion      sample.ID probe_count cell_count
+1386  KRAS-p-G12D-ALT-T        0.3005952 SP002C1-Fp1U2         101 n_cell=335
+13861 KRAS-p-G12D-ALT-T        0.6994048 SP002C1-Fp1U2         235 n_cell=335
+13862 KRAS-p-G12D-ALT-T        0.1445783 SP002C1-Fp1U2          24 n_cell=166
+13863 KRAS-p-G12D-ALT-T        0.8554217 SP002C1-Fp1U2         142 n_cell=166
+         cell_type     probe_target probe_total
+1386  Cancer cells   Variant allele         336
+13861 Cancer cells Reference allele         336
+13862 Normal cells   Variant allele         166
+13863 Normal cells Reference allele         166
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+             probe_site probe_proportion      sample.ID probe_count  cell_count
+1384  KRAS-p-G12V-ALT-A       0.91971302 SP002C1-Fp1U2        2692 n_cell=2874
+13841 KRAS-p-G12V-ALT-A       0.08028698 SP002C1-Fp1U2         235 n_cell=2874
+13842 KRAS-p-G12V-ALT-A       0.56969697 SP002C1-Fp1U2         188  n_cell=328
+13843 KRAS-p-G12V-ALT-A       0.43030303 SP002C1-Fp1U2         142  n_cell=328
+         cell_type     probe_target probe_total
+1384  Cancer cells   Variant allele        2927
+13841 Cancer cells Reference allele        2927
+13842 Normal cells   Variant allele         330
+13843 Normal cells Reference allele         330
+NULL
+[1] "HT060P1-S1R1Fp1U1"
+[1] "KRAS-p-G12D-ALT-T"   "KRAS-p-G12V-WT"      "KRAS-p-G12V-ALT-A"  
+[4] "ATM-p-Y1124---ALT-G" "ATM-p-Y1124---WT"   
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion         sample.ID probe_count
+836  KRAS-p-G12D-ALT-T       0.03735632 HT060P1-S1R1Fp1U1          13
+8361 KRAS-p-G12D-ALT-T       0.96264368 HT060P1-S1R1Fp1U1         335
+8362 KRAS-p-G12D-ALT-T       0.01527203 HT060P1-S1R1Fp1U1          48
+8363 KRAS-p-G12D-ALT-T       0.98472797 HT060P1-S1R1Fp1U1        3095
+      cell_count    cell_type     probe_target probe_total
+836   n_cell=323 Cancer cells   Variant allele         348
+8361  n_cell=323 Cancer cells Reference allele         348
+8362 n_cell=3060 Normal cells   Variant allele        3143
+8363 n_cell=3060 Normal cells Reference allele        3143
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion         sample.ID probe_count
+868  KRAS-p-G12V-ALT-A       0.35203095 HT060P1-S1R1Fp1U1         182
+8681 KRAS-p-G12V-ALT-A       0.64796905 HT060P1-S1R1Fp1U1         335
+8682 KRAS-p-G12V-ALT-A       0.02764687 HT060P1-S1R1Fp1U1          88
+8683 KRAS-p-G12V-ALT-A       0.97235313 HT060P1-S1R1Fp1U1        3095
+      cell_count    cell_type     probe_target probe_total
+868   n_cell=473 Cancer cells   Variant allele         517
+8681  n_cell=473 Cancer cells Reference allele         517
+8682 n_cell=3096 Normal cells   Variant allele        3183
+8683 n_cell=3096 Normal cells Reference allele        3183
+[1] "ATM-p-Y1124---ALT-G"
+              probe_site probe_proportion         sample.ID probe_count
+164  ATM-p-Y1124---ALT-G        0.1533019 HT060P1-S1R1Fp1U1          65
+1641 ATM-p-Y1124---ALT-G        0.8466981 HT060P1-S1R1Fp1U1         359
+1642 ATM-p-Y1124---ALT-G        0.1871878 HT060P1-S1R1Fp1U1        2136
+1643 ATM-p-Y1124---ALT-G        0.8128122 HT060P1-S1R1Fp1U1        9275
+       cell_count    cell_type     probe_target probe_total
+164    n_cell=386 Cancer cells   Variant allele         424
+1641   n_cell=386 Cancer cells Reference allele         424
+1642 n_cell=10949 Normal cells   Variant allele       11411
+1643 n_cell=10949 Normal cells Reference allele       11411
+[1] "ATM-p-Y1124---WT"
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion         sample.ID probe_count
+836  KRAS-p-G12D-ALT-T       0.03735632 HT060P1-S1R1Fp1U1          13
+8361 KRAS-p-G12D-ALT-T       0.96264368 HT060P1-S1R1Fp1U1         335
+8362 KRAS-p-G12D-ALT-T       0.01527203 HT060P1-S1R1Fp1U1          48
+8363 KRAS-p-G12D-ALT-T       0.98472797 HT060P1-S1R1Fp1U1        3095
+      cell_count    cell_type     probe_target probe_total
+836   n_cell=323 Cancer cells   Variant allele         348
+8361  n_cell=323 Cancer cells Reference allele         348
+8362 n_cell=3060 Normal cells   Variant allele        3143
+8363 n_cell=3060 Normal cells Reference allele        3143
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion         sample.ID probe_count
+868  KRAS-p-G12V-ALT-A       0.35203095 HT060P1-S1R1Fp1U1         182
+8681 KRAS-p-G12V-ALT-A       0.64796905 HT060P1-S1R1Fp1U1         335
+8682 KRAS-p-G12V-ALT-A       0.02764687 HT060P1-S1R1Fp1U1          88
+8683 KRAS-p-G12V-ALT-A       0.97235313 HT060P1-S1R1Fp1U1        3095
+      cell_count    cell_type     probe_target probe_total
+868   n_cell=473 Cancer cells   Variant allele         517
+8681  n_cell=473 Cancer cells Reference allele         517
+8682 n_cell=3096 Normal cells   Variant allele        3183
+8683 n_cell=3096 Normal cells Reference allele        3183
+[1] "ATM-p-Y1124---ALT-G"
+              probe_site probe_proportion         sample.ID probe_count
+164  ATM-p-Y1124---ALT-G        0.1533019 HT060P1-S1R1Fp1U1          65
+1641 ATM-p-Y1124---ALT-G        0.8466981 HT060P1-S1R1Fp1U1         359
+1642 ATM-p-Y1124---ALT-G        0.1871878 HT060P1-S1R1Fp1U1        2136
+1643 ATM-p-Y1124---ALT-G        0.8128122 HT060P1-S1R1Fp1U1        9275
+       cell_count    cell_type     probe_target probe_total
+164    n_cell=386 Cancer cells   Variant allele         424
+1641   n_cell=386 Cancer cells Reference allele         424
+1642 n_cell=10949 Normal cells   Variant allele       11411
+1643 n_cell=10949 Normal cells Reference allele       11411
+[1] "ATM-p-Y1124---WT"
+NULL
+[1] "HT061P1-S1P1A1L1U1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion          sample.ID probe_count
+837  KRAS-p-G12D-ALT-T       0.47814910 HT061P1-S1P1A1L1U1         186
+8371 KRAS-p-G12D-ALT-T       0.52185090 HT061P1-S1P1A1L1U1         203
+8372 KRAS-p-G12D-ALT-T       0.07095344 HT061P1-S1P1A1L1U1          32
+8373 KRAS-p-G12D-ALT-T       0.92904656 HT061P1-S1P1A1L1U1         419
+     cell_count    cell_type     probe_target probe_total
+837  n_cell=379 Cancer cells   Variant allele         389
+8371 n_cell=379 Cancer cells Reference allele         389
+8372 n_cell=443 Normal cells   Variant allele         451
+8373 n_cell=443 Normal cells Reference allele         451
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion          sample.ID probe_count
+869  KRAS-p-G12V-ALT-A       0.01456311 HT061P1-S1P1A1L1U1           3
+8691 KRAS-p-G12V-ALT-A       0.98543689 HT061P1-S1P1A1L1U1         203
+8692 KRAS-p-G12V-ALT-A       0.01873536 HT061P1-S1P1A1L1U1           8
+8693 KRAS-p-G12V-ALT-A       0.98126464 HT061P1-S1P1A1L1U1         419
+     cell_count    cell_type     probe_target probe_total
+869  n_cell=204 Cancer cells   Variant allele         206
+8691 n_cell=204 Cancer cells Reference allele         206
+8692 n_cell=420 Normal cells   Variant allele         427
+8693 n_cell=420 Normal cells Reference allele         427
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion          sample.ID probe_count
+837  KRAS-p-G12D-ALT-T       0.47814910 HT061P1-S1P1A1L1U1         186
+8371 KRAS-p-G12D-ALT-T       0.52185090 HT061P1-S1P1A1L1U1         203
+8372 KRAS-p-G12D-ALT-T       0.07095344 HT061P1-S1P1A1L1U1          32
+8373 KRAS-p-G12D-ALT-T       0.92904656 HT061P1-S1P1A1L1U1         419
+     cell_count    cell_type     probe_target probe_total
+837  n_cell=379 Cancer cells   Variant allele         389
+8371 n_cell=379 Cancer cells Reference allele         389
+8372 n_cell=443 Normal cells   Variant allele         451
+8373 n_cell=443 Normal cells Reference allele         451
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion          sample.ID probe_count
+869  KRAS-p-G12V-ALT-A       0.01456311 HT061P1-S1P1A1L1U1           3
+8691 KRAS-p-G12V-ALT-A       0.98543689 HT061P1-S1P1A1L1U1         203
+8692 KRAS-p-G12V-ALT-A       0.01873536 HT061P1-S1P1A1L1U1           8
+8693 KRAS-p-G12V-ALT-A       0.98126464 HT061P1-S1P1A1L1U1         419
+     cell_count    cell_type     probe_target probe_total
+869  n_cell=204 Cancer cells   Variant allele         206
+8691 n_cell=204 Cancer cells Reference allele         206
+8692 n_cell=420 Normal cells   Variant allele         427
+8693 n_cell=420 Normal cells Reference allele         427
+NULL
+[1] "HT061P1-S1P1A1L4U1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion          sample.ID probe_count
+838  KRAS-p-G12D-ALT-T       0.63497453 HT061P1-S1P1A1L4U1         748
+8381 KRAS-p-G12D-ALT-T       0.36502547 HT061P1-S1P1A1L4U1         430
+8382 KRAS-p-G12D-ALT-T       0.08540472 HT061P1-S1P1A1L4U1         134
+8383 KRAS-p-G12D-ALT-T       0.91459528 HT061P1-S1P1A1L4U1        1435
+      cell_count    cell_type     probe_target probe_total
+838  n_cell=1094 Cancer cells   Variant allele        1178
+8381 n_cell=1094 Cancer cells Reference allele        1178
+8382 n_cell=1513 Normal cells   Variant allele        1569
+8383 n_cell=1513 Normal cells Reference allele        1569
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion          sample.ID probe_count
+870  KRAS-p-G12V-ALT-A      0.031531532 HT061P1-S1P1A1L4U1          14
+8701 KRAS-p-G12V-ALT-A      0.968468468 HT061P1-S1P1A1L4U1         430
+8702 KRAS-p-G12V-ALT-A      0.009661836 HT061P1-S1P1A1L4U1          14
+8703 KRAS-p-G12V-ALT-A      0.990338164 HT061P1-S1P1A1L4U1        1435
+      cell_count    cell_type     probe_target probe_total
+870   n_cell=426 Cancer cells   Variant allele         444
+8701  n_cell=426 Cancer cells Reference allele         444
+8702 n_cell=1404 Normal cells   Variant allele        1449
+8703 n_cell=1404 Normal cells Reference allele        1449
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion          sample.ID probe_count
+838  KRAS-p-G12D-ALT-T       0.63497453 HT061P1-S1P1A1L4U1         748
+8381 KRAS-p-G12D-ALT-T       0.36502547 HT061P1-S1P1A1L4U1         430
+8382 KRAS-p-G12D-ALT-T       0.08540472 HT061P1-S1P1A1L4U1         134
+8383 KRAS-p-G12D-ALT-T       0.91459528 HT061P1-S1P1A1L4U1        1435
+      cell_count    cell_type     probe_target probe_total
+838  n_cell=1094 Cancer cells   Variant allele        1178
+8381 n_cell=1094 Cancer cells Reference allele        1178
+8382 n_cell=1513 Normal cells   Variant allele        1569
+8383 n_cell=1513 Normal cells Reference allele        1569
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion          sample.ID probe_count
+870  KRAS-p-G12V-ALT-A      0.031531532 HT061P1-S1P1A1L4U1          14
+8701 KRAS-p-G12V-ALT-A      0.968468468 HT061P1-S1P1A1L4U1         430
+8702 KRAS-p-G12V-ALT-A      0.009661836 HT061P1-S1P1A1L4U1          14
+8703 KRAS-p-G12V-ALT-A      0.990338164 HT061P1-S1P1A1L4U1        1435
+      cell_count    cell_type     probe_target probe_total
+870   n_cell=426 Cancer cells   Variant allele         444
+8701  n_cell=426 Cancer cells Reference allele         444
+8702 n_cell=1404 Normal cells   Variant allele        1449
+8703 n_cell=1404 Normal cells Reference allele        1449
+NULL
+[1] "HT125P1-S1H4A1L1U1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion          sample.ID probe_count
+839  KRAS-p-G12D-ALT-T       0.01382488 HT125P1-S1H4A1L1U1           3
+8391 KRAS-p-G12D-ALT-T       0.98617512 HT125P1-S1H4A1L1U1         214
+8392 KRAS-p-G12D-ALT-T       0.01867995 HT125P1-S1H4A1L1U1          15
+8393 KRAS-p-G12D-ALT-T       0.98132005 HT125P1-S1H4A1L1U1         788
+     cell_count    cell_type     probe_target probe_total
+839  n_cell=212 Cancer cells   Variant allele         217
+8391 n_cell=212 Cancer cells Reference allele         217
+8392 n_cell=785 Normal cells   Variant allele         803
+8393 n_cell=785 Normal cells Reference allele         803
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion          sample.ID probe_count
+871  KRAS-p-G12V-ALT-A       0.39548023 HT125P1-S1H4A1L1U1         140
+8711 KRAS-p-G12V-ALT-A       0.60451977 HT125P1-S1H4A1L1U1         214
+8712 KRAS-p-G12V-ALT-A       0.02955665 HT125P1-S1H4A1L1U1          24
+8713 KRAS-p-G12V-ALT-A       0.97044335 HT125P1-S1H4A1L1U1         788
+     cell_count    cell_type     probe_target probe_total
+871  n_cell=341 Cancer cells   Variant allele         354
+8711 n_cell=341 Cancer cells Reference allele         354
+8712 n_cell=793 Normal cells   Variant allele         812
+8713 n_cell=793 Normal cells Reference allele         812
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion          sample.ID probe_count
+839  KRAS-p-G12D-ALT-T       0.01382488 HT125P1-S1H4A1L1U1           3
+8391 KRAS-p-G12D-ALT-T       0.98617512 HT125P1-S1H4A1L1U1         214
+8392 KRAS-p-G12D-ALT-T       0.01867995 HT125P1-S1H4A1L1U1          15
+8393 KRAS-p-G12D-ALT-T       0.98132005 HT125P1-S1H4A1L1U1         788
+     cell_count    cell_type     probe_target probe_total
+839  n_cell=212 Cancer cells   Variant allele         217
+8391 n_cell=212 Cancer cells Reference allele         217
+8392 n_cell=785 Normal cells   Variant allele         803
+8393 n_cell=785 Normal cells Reference allele         803
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion          sample.ID probe_count
+871  KRAS-p-G12V-ALT-A       0.39548023 HT125P1-S1H4A1L1U1         140
+8711 KRAS-p-G12V-ALT-A       0.60451977 HT125P1-S1H4A1L1U1         214
+8712 KRAS-p-G12V-ALT-A       0.02955665 HT125P1-S1H4A1L1U1          24
+8713 KRAS-p-G12V-ALT-A       0.97044335 HT125P1-S1H4A1L1U1         788
+     cell_count    cell_type     probe_target probe_total
+871  n_cell=341 Cancer cells   Variant allele         354
+8711 n_cell=341 Cancer cells Reference allele         354
+8712 n_cell=793 Normal cells   Variant allele         812
+8713 n_cell=793 Normal cells Reference allele         812
+NULL
+[1] "HT125P1-S1H8A1U1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+840  KRAS-p-G12D-ALT-T       0.01485149 HT125P1-S1H8A1U1           3 n_cell=195
+8401 KRAS-p-G12D-ALT-T       0.98514851 HT125P1-S1H8A1U1         199 n_cell=195
+8402 KRAS-p-G12D-ALT-T       0.02836879 HT125P1-S1H8A1U1          12 n_cell=414
+8403 KRAS-p-G12D-ALT-T       0.97163121 HT125P1-S1H8A1U1         411 n_cell=414
+        cell_type     probe_target probe_total
+840  Cancer cells   Variant allele         202
+8401 Cancer cells Reference allele         202
+8402 Normal cells   Variant allele         423
+8403 Normal cells Reference allele         423
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+872  KRAS-p-G12V-ALT-A       0.44257703 HT125P1-S1H8A1U1         158 n_cell=340
+8721 KRAS-p-G12V-ALT-A       0.55742297 HT125P1-S1H8A1U1         199 n_cell=340
+8722 KRAS-p-G12V-ALT-A       0.03971963 HT125P1-S1H8A1U1          17 n_cell=419
+8723 KRAS-p-G12V-ALT-A       0.96028037 HT125P1-S1H8A1U1         411 n_cell=419
+        cell_type     probe_target probe_total
+872  Cancer cells   Variant allele         357
+8721 Cancer cells Reference allele         357
+8722 Normal cells   Variant allele         428
+8723 Normal cells Reference allele         428
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+840  KRAS-p-G12D-ALT-T       0.01485149 HT125P1-S1H8A1U1           3 n_cell=195
+8401 KRAS-p-G12D-ALT-T       0.98514851 HT125P1-S1H8A1U1         199 n_cell=195
+8402 KRAS-p-G12D-ALT-T       0.02836879 HT125P1-S1H8A1U1          12 n_cell=414
+8403 KRAS-p-G12D-ALT-T       0.97163121 HT125P1-S1H8A1U1         411 n_cell=414
+        cell_type     probe_target probe_total
+840  Cancer cells   Variant allele         202
+8401 Cancer cells Reference allele         202
+8402 Normal cells   Variant allele         423
+8403 Normal cells Reference allele         423
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+872  KRAS-p-G12V-ALT-A       0.44257703 HT125P1-S1H8A1U1         158 n_cell=340
+8721 KRAS-p-G12V-ALT-A       0.55742297 HT125P1-S1H8A1U1         199 n_cell=340
+8722 KRAS-p-G12V-ALT-A       0.03971963 HT125P1-S1H8A1U1          17 n_cell=419
+8723 KRAS-p-G12V-ALT-A       0.96028037 HT125P1-S1H8A1U1         411 n_cell=419
+        cell_type     probe_target probe_total
+872  Cancer cells   Variant allele         357
+8721 Cancer cells Reference allele         357
+8722 Normal cells   Variant allele         428
+8723 Normal cells Reference allele         428
+NULL
+[1] "HT179C1-T1Fp3L5U1"
+[1] "KRAS-p-G12D-ALT-T"    "KRAS-p-G12V-WT"       "KRAS-p-G12V-ALT-A"   
+[4] "PIK3CA-p-E545K-ALT-A" "PIK3CA-p-E545K-WT"   
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion         sample.ID probe_count
+841  KRAS-p-G12D-ALT-T        0.5717217 HT179C1-T1Fp3L5U1        3065
+8411 KRAS-p-G12D-ALT-T        0.4282783 HT179C1-T1Fp3L5U1        2296
+8412 KRAS-p-G12D-ALT-T        0.1516854 HT179C1-T1Fp3L5U1         189
+8413 KRAS-p-G12D-ALT-T        0.8483146 HT179C1-T1Fp3L5U1        1057
+      cell_count    cell_type     probe_target probe_total
+841  n_cell=5039 Cancer cells   Variant allele        5361
+8411 n_cell=5039 Cancer cells Reference allele        5361
+8412 n_cell=1212 Normal cells   Variant allele        1246
+8413 n_cell=1212 Normal cells Reference allele        1246
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion         sample.ID probe_count
+873  KRAS-p-G12V-ALT-A       0.01964133 HT179C1-T1Fp3L5U1          46
+8731 KRAS-p-G12V-ALT-A       0.98035867 HT179C1-T1Fp3L5U1        2296
+8732 KRAS-p-G12V-ALT-A       0.04170444 HT179C1-T1Fp3L5U1          46
+8733 KRAS-p-G12V-ALT-A       0.95829556 HT179C1-T1Fp3L5U1        1057
+      cell_count    cell_type     probe_target probe_total
+873  n_cell=2249 Cancer cells   Variant allele        2342
+8731 n_cell=2249 Cancer cells Reference allele        2342
+8732 n_cell=1077 Normal cells   Variant allele        1103
+8733 n_cell=1077 Normal cells Reference allele        1103
+[1] "PIK3CA-p-E545K-ALT-A"
+                probe_site probe_proportion         sample.ID probe_count
+1161  PIK3CA-p-E545K-ALT-A        0.8069086 HT179C1-T1Fp3L5U1        4158
+11611 PIK3CA-p-E545K-ALT-A        0.1930914 HT179C1-T1Fp3L5U1         995
+11612 PIK3CA-p-E545K-ALT-A        0.1217949 HT179C1-T1Fp3L5U1         228
+11613 PIK3CA-p-E545K-ALT-A        0.8782051 HT179C1-T1Fp3L5U1        1644
+       cell_count    cell_type     probe_target probe_total
+1161  n_cell=4830 Cancer cells   Variant allele        5153
+11611 n_cell=4830 Cancer cells Reference allele        5153
+11612 n_cell=1791 Normal cells   Variant allele        1872
+11613 n_cell=1791 Normal cells Reference allele        1872
+[1] "PIK3CA-p-E545K-WT"
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion         sample.ID probe_count
+841  KRAS-p-G12D-ALT-T        0.5717217 HT179C1-T1Fp3L5U1        3065
+8411 KRAS-p-G12D-ALT-T        0.4282783 HT179C1-T1Fp3L5U1        2296
+8412 KRAS-p-G12D-ALT-T        0.1516854 HT179C1-T1Fp3L5U1         189
+8413 KRAS-p-G12D-ALT-T        0.8483146 HT179C1-T1Fp3L5U1        1057
+      cell_count    cell_type     probe_target probe_total
+841  n_cell=5039 Cancer cells   Variant allele        5361
+8411 n_cell=5039 Cancer cells Reference allele        5361
+8412 n_cell=1212 Normal cells   Variant allele        1246
+8413 n_cell=1212 Normal cells Reference allele        1246
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion         sample.ID probe_count
+873  KRAS-p-G12V-ALT-A       0.01964133 HT179C1-T1Fp3L5U1          46
+8731 KRAS-p-G12V-ALT-A       0.98035867 HT179C1-T1Fp3L5U1        2296
+8732 KRAS-p-G12V-ALT-A       0.04170444 HT179C1-T1Fp3L5U1          46
+8733 KRAS-p-G12V-ALT-A       0.95829556 HT179C1-T1Fp3L5U1        1057
+      cell_count    cell_type     probe_target probe_total
+873  n_cell=2249 Cancer cells   Variant allele        2342
+8731 n_cell=2249 Cancer cells Reference allele        2342
+8732 n_cell=1077 Normal cells   Variant allele        1103
+8733 n_cell=1077 Normal cells Reference allele        1103
+[1] "PIK3CA-p-E545K-ALT-A"
+                probe_site probe_proportion         sample.ID probe_count
+1161  PIK3CA-p-E545K-ALT-A        0.8069086 HT179C1-T1Fp3L5U1        4158
+11611 PIK3CA-p-E545K-ALT-A        0.1930914 HT179C1-T1Fp3L5U1         995
+11612 PIK3CA-p-E545K-ALT-A        0.1217949 HT179C1-T1Fp3L5U1         228
+11613 PIK3CA-p-E545K-ALT-A        0.8782051 HT179C1-T1Fp3L5U1        1644
+       cell_count    cell_type     probe_target probe_total
+1161  n_cell=4830 Cancer cells   Variant allele        5153
+11611 n_cell=4830 Cancer cells Reference allele        5153
+11612 n_cell=1791 Normal cells   Variant allele        1872
+11613 n_cell=1791 Normal cells Reference allele        1872
+[1] "PIK3CA-p-E545K-WT"
+NULL
+[1] "HT185P1-S1H2L1U1"
+[1] "KRAS-p-G12D-ALT-T" "KRAS-p-G12V-WT"    "KRAS-p-G12V-ALT-A"
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+842  KRAS-p-G12D-ALT-T       0.02272727 HT185P1-S1H2L1U1           1  n_cell=44
+8421 KRAS-p-G12D-ALT-T       0.97727273 HT185P1-S1H2L1U1          43  n_cell=44
+8422 KRAS-p-G12D-ALT-T       0.03773585 HT185P1-S1H2L1U1          10 n_cell=258
+8423 KRAS-p-G12D-ALT-T       0.96226415 HT185P1-S1H2L1U1         255 n_cell=258
+        cell_type     probe_target probe_total
+842  Cancer cells   Variant allele          44
+8421 Cancer cells Reference allele          44
+8422 Normal cells   Variant allele         265
+8423 Normal cells Reference allele         265
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+874  KRAS-p-G12V-ALT-A       0.81545064 HT185P1-S1H2L1U1         190 n_cell=218
+8741 KRAS-p-G12V-ALT-A       0.18454936 HT185P1-S1H2L1U1          43 n_cell=218
+8742 KRAS-p-G12V-ALT-A       0.07608696 HT185P1-S1H2L1U1          21 n_cell=270
+8743 KRAS-p-G12V-ALT-A       0.92391304 HT185P1-S1H2L1U1         255 n_cell=270
+        cell_type     probe_target probe_total
+874  Cancer cells   Variant allele         233
+8741 Cancer cells Reference allele         233
+8742 Normal cells   Variant allele         276
+8743 Normal cells Reference allele         276
+NULL
+[1] "KRAS-p-G12D-ALT-T"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+842  KRAS-p-G12D-ALT-T       0.02272727 HT185P1-S1H2L1U1           1  n_cell=44
+8421 KRAS-p-G12D-ALT-T       0.97727273 HT185P1-S1H2L1U1          43  n_cell=44
+8422 KRAS-p-G12D-ALT-T       0.03773585 HT185P1-S1H2L1U1          10 n_cell=258
+8423 KRAS-p-G12D-ALT-T       0.96226415 HT185P1-S1H2L1U1         255 n_cell=258
+        cell_type     probe_target probe_total
+842  Cancer cells   Variant allele          44
+8421 Cancer cells Reference allele          44
+8422 Normal cells   Variant allele         265
+8423 Normal cells Reference allele         265
+[1] "KRAS-p-G12V-WT"
+[1] "KRAS-p-G12V-ALT-A"
+            probe_site probe_proportion        sample.ID probe_count cell_count
+874  KRAS-p-G12V-ALT-A       0.81545064 HT185P1-S1H2L1U1         190 n_cell=218
+8741 KRAS-p-G12V-ALT-A       0.18454936 HT185P1-S1H2L1U1          43 n_cell=218
+8742 KRAS-p-G12V-ALT-A       0.07608696 HT185P1-S1H2L1U1          21 n_cell=270
+8743 KRAS-p-G12V-ALT-A       0.92391304 HT185P1-S1H2L1U1         255 n_cell=270
+        cell_type     probe_target probe_total
+874  Cancer cells   Variant allele         233
+8741 Cancer cells Reference allele         233
+8742 Normal cells   Variant allele         276
+8743 Normal cells Reference allele         276
+NULL
+There were 34 warnings (use warnings() to see them)

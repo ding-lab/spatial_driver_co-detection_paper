@@ -1,0 +1,1109 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning message:
+package ‘epitools’ was built under R version 4.3.3 
+
+Attaching package: ‘effectsize’
+
+The following objects are masked from ‘package:epitools’:
+
+    oddsratio, riskratio
+
+Warning message:
+package ‘effectsize’ was built under R version 4.3.3 
+[1] "All_variants_probe_specificity_results_by_sample.tsv"                                       
+[2] "All_variants_probe_specificity_results_removed_unknown_v6_subclone_counts_with_germline.tsv"
+[1] "APC-p-R213---ALT-A"
+[1] "WUPE08092A1-S1H3U1"
+              ALT    WT
+Cancer_cell    40    82
+Normal_cell 21919 44647
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 0.0011015, df = NA, p-value = 1
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 0.0011015, df = 1, p-value = 0.5132
+alternative hypothesis: greater
+95 percent confidence interval:
+ -0.07138514  1.00000000
+sample estimates:
+   prop 1    prop 2 
+0.3278689 0.3292822 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+0.99       | [0.68, 1.45]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.00       | [0.00, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "APC-p-S1298Ffs--3-ALT-T"
+[1] "HT260C1-Th1K1L1U1"
+             ALT    WT
+Cancer_cell   84    22
+Normal_cell 7374 53132
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 440.97, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 440.97, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.605752 1.000000
+sample estimates:
+   prop 1    prop 2 
+0.7924528 0.1218722 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+27.51      | [17.19, 44.02]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.09       | [0.08, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "ASXL1-p-P808Lfs--10-ALT--"
+character(0)
+[1] "ASXL1-p-Q733---ALT-T"
+character(0)
+[1] "ATM-p-Q628fs-ALT-T"
+[1] "HT305B1-S1H5A1U1"
+              ALT     WT
+Cancer_cell  3541   1325
+Normal_cell 69456 111211
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 2339.5, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 2339.5, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.3325965 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.7277024 0.3844421 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+4.28       | [4.01, 4.56]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.11       | [0.11, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "ATM-p-Y1124---ALT-G"
+[1] "HT308B1-S1H5A4U1"  "HT060P1-S1R1Fp1U1"
+             ALT     WT
+Cancer_cell 2277   9755
+Normal_cell 1262 146143
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 16732, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 16732, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.1747969 1.0000000
+sample estimates:
+     prop 1      prop 2 
+0.189245346 0.008561446 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+27.03      | [25.16, 29.04]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.32       | [0.32, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "BAP1-p-T254Dfs--30-ALT-T"
+character(0)
+[1] "BAP1-p-T93A-ALT-C"
+[1] "C3L-01287-11Us2_1"
+             ALT     WT
+Cancer_cell   13     16
+Normal_cell 1389 111254
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 448.39, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 448.39, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.2840425 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.44827586 0.01233099 
+
+[1] "Odds ratio"
+Odds ratio |          95% CI
+----------------------------
+65.08      | [31.24, 135.55]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.06       | [0.06, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "BAP1-p-W52G-ALT-C"
+character(0)
+[1] "BRAF-p-V600E-ALT-T"
+[1] "WUPE28077U1-Fp1U1"
+             ALT    WT
+Cancer_cell   88    15
+Normal_cell 5446 23186
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 291.14, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 291.14, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.6068663 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.8543689 0.1902068 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+24.98      | [14.44, 43.22]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.10       | [0.09, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "BRCA2-p-A938fs-ALT--"
+[1] "HT243B1-S1H1A4U1"
+             ALT    WT
+Cancer_cell  731   733
+Normal_cell 4306 57275
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 3586.6, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 3586.6, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.407832 1.000000
+sample estimates:
+    prop 1     prop 2 
+0.49931694 0.06992416 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+13.26      | [11.92, 14.76]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.24       | [0.23, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "CTNNB1-p-S45Y-ALT-A"
+[1] "HT284P1-S1H1A1U1"
+             ALT    WT
+Cancer_cell 9352   667
+Normal_cell 1745 18908
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 21057, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 21057, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.8437473 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.93342649 0.08449136 
+
+[1] "Odds ratio"
+Odds ratio |           95% CI
+-----------------------------
+151.92     | [138.49, 166.66]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.83       | [0.82, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "DIS3-p-E429Q-ALT-G"
+[1] "WUPE82256U1-Fp1U1"
+             ALT    WT
+Cancer_cell   56     3
+Normal_cell 3398 66205
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 1014, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 1014, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.8532697 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.94915254 0.04881973 
+
+[1] "Odds ratio"
+Odds ratio |            95% CI
+------------------------------
+363.69     | [113.78, 1162.49]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.12       | [0.11, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "DIS3-p-R780K-ALT-T"
+[1] "WUPE25723U1-Fp1U1"
+              ALT    WT
+Cancer_cell    18     4
+Normal_cell 11334 29170
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 31.603, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 31.603, df = 1, p-value = 9.457e-09
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.4030509 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.8181818 0.2798242 
+
+[1] "Odds ratio"
+Odds ratio |        95% CI
+--------------------------
+11.58      | [3.92, 34.23]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.03       | [0.02, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "DLGAP4-p-Q689---ALT-T"
+[1] "WUPE04916U1-Fp1U1"
+             ALT     WT
+Cancer_cell   79     55
+Normal_cell 6102 116372
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 814.53, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 814.53, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.4698239 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.58955224 0.04982282 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+27.39      | [19.40, 38.68]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.08       | [0.08, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "DNAH11-p-F1662fs-ALT--"
+character(0)
+[1] "DNMT3A-p-R882C-ALT-A"
+character(0)
+[1] "EEF1A1-p-D442H-ALT-G"
+[1] "HT268B1-Th1H3L1U1"
+               ALT       WT
+Cancer_cell 111322   838718
+Normal_cell  38670 12488233
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 1044400, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 1044400, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.1135458 1.0000000
+sample estimates:
+     prop 1      prop 2 
+0.117176119 0.003086956 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+42.86      | [42.36, 43.37]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.28       | [0.28, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "EGFR-p-A289V-ALT-T"
+character(0)
+[1] "EGFR-p-Q71K-ALT-A"
+character(0)
+[1] "FANCA-p-E1240fs-ALT--"
+[1] "HT425B1-S1H1Fp1U1"
+              ALT    WT
+Cancer_cell   643   534
+Normal_cell 11429 64308
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 1369.4, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 1369.4, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.3714354 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.5463042 0.1509038 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+6.78       | [6.03, 7.61]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.13       | [0.13, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "GNAS-p-R201C-ALT-T"
+[1] "SP001P1-Fp1U1"
+              ALT     WT
+Cancer_cell 15823   9677
+Normal_cell 11946 597897
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 211467, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 211467, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.5959142 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.62050980 0.01958865 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+81.84      | [79.33, 84.42]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.58       | [0.57, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "IDH1-p-R132C-ALT-A"
+[1] "C3L-03372-12Us3_1"
+             ALT    WT
+Cancer_cell  458   200
+Normal_cell 4408 44420
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 2687.2, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 2687.2, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.5762013 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.69604863 0.09027607 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+23.08      | [19.49, 27.32]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.23       | [0.23, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "IDH1-p-R132H-ALT-T"
+[1] "WUPE68972U1-Fp1U1" "C3N-00663-11U3"
+              ALT    WT
+Cancer_cell  1887   437
+Normal_cell 40015 44183
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 1026.6, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 1026.6, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.323084 1.000000
+sample estimates:
+   prop 1    prop 2 
+0.8119621 0.4752488 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+4.77       | [4.29, 5.30]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.11       | [0.10, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "IRF4-p-Q300---ALT-T"
+[1] "WUPE62598U1-Fp2U1"
+              ALT   WT
+Cancer_cell  7507 1533
+Normal_cell 33410 6019
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 16.016, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 16.016, df = 1, p-value = 1
+alternative hypothesis: greater
+95 percent confidence interval:
+ -0.02406847  1.00000000
+sample estimates:
+   prop 1    prop 2 
+0.8304204 0.8473459 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+0.88       | [0.83, 0.94]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.02       | [0.01, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "JAK2-p-V617F-ALT-T"
+character(0)
+[1] "KRAS-p-G12D-ALT-T"
+[1] "HT227P1-S1H1L1U1"    "HT242P1-S1H4L4U1"    "SP001P1-Fp1U1"     
+[4] "HT270P1-S1H1A1US2_1" "HT061P1-S1P1A1L1U1"  "HT061P1-S1P1A1L4U1" 
+[7] "HT179C1-T1Fp3L5U1"  
+              ALT    WT
+Cancer_cell 12754  7266
+Normal_cell  3855 30168
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 16242, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 16242, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.5174934 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.6370629 0.1133057 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+13.74      | [13.14, 14.36]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.55       | [0.54, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "KRAS-p-G12V-ALT-A"
+[1] "SP002C1-Fp1U2"     "HT060P1-S1R1Fp1U1"  "HT125P1-S1H4A1L1U1"
+[4] "HT125P1-S1H8A1U1"   "HT185P1-S1H2L1U1"  
+             ALT    WT
+Cancer_cell 3362  1026
+Normal_cell 1363 36408
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 21057, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 21057, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.7194668 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.76618049 0.03608589 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+87.53      | [80.13, 95.62]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.71       | [0.70, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "KRAS-p-M111V-ALT-C"
+character(0)
+[1] "KRAS-p-Q61H-ALT-G"
+[1] "WUPE38758U1-Fp1U1"
+             ALT    WT
+Cancer_cell    4    18
+Normal_cell 3371 91207
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 13.66, df = NA, p-value = 0.007996
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 13.66, df = 1, p-value = 0.0001095
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.01091509 1.00000000
+sample estimates:
+    prop 1     prop 2 
+0.18181818 0.03564254 
+
+[1] "Odds ratio"
+Odds ratio |        95% CI
+--------------------------
+6.01       | [2.03, 17.78]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.01       | [0.01, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "LDHB-p-Q307---ALT-T"
+[1] "HT260C1-Th1K1L1U1"
+              ALT     WT
+Cancer_cell 13424  60274
+Normal_cell  4925 862579
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 110666, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 110666, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.1741292 1.0000000
+sample estimates:
+     prop 1      prop 2 
+0.182148769 0.005677207 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+39.01      | [37.72, 40.34]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.34       | [0.34, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "MAP1B-p-E611D-ALT-T"
+[1] "HT268B1-Th1H3L1U1"
+             ALT     WT
+Cancer_cell  762  19504
+Normal_cell 4264 140382
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 39.675, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 39.675, df = 1, p-value = 1.5e-10
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.005804582 1.000000000
+sample estimates:
+    prop 1     prop 2 
+0.03759992 0.02947887 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+1.29       | [1.19, 1.39]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.02       | [0.01, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "NPM1-p-W288Cfs--12-ALT-TGCT"
+character(0)
+[1] "NRAS-p-Q61H-ALT-G"
+[1] "WUPE86238U1-Fp1U1"
+             ALT     WT
+Cancer_cell  102     73
+Normal_cell 2567 128379
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 2780.5, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 2780.5, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.5019403 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.5828571 0.0196035 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+69.88      | [51.61, 94.61]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.15       | [0.14, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "PELI1-p-R46T-ALT-G"
+[1] "HT268B1-Th1H3L1U1"
+             ALT     WT
+Cancer_cell   67  30787
+Normal_cell 1092 239030
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 36.247, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 36.247, df = 1, p-value = 1
+alternative hypothesis: greater
+95 percent confidence interval:
+ -0.0028671  1.0000000
+sample estimates:
+     prop 1      prop 2 
+0.002171517 0.004547688 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+0.48       | [0.37, 0.61]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.01       | [0.01, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "PGAP2-p---316Rext--40-ALT-C"
+[1] "HT268B1-Th1H3L1U1"
+             ALT    WT
+Cancer_cell 1013   393
+Normal_cell 1845 11875
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 2857.8, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 2857.8, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.5657482 1.0000000
+sample estimates:
+   prop 1    prop 2 
+0.7204836 0.1344752 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+16.59      | [14.62, 18.83]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.43       | [0.42, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "PIK3CA-p-E545K-ALT-A"
+[1] "HT425B1-S1H1Fp1U1" "HT179C1-T1Fp3L5U1"
+             ALT    WT
+Cancer_cell 4818  1138
+Normal_cell 1236 81623
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 55153, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 55153, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.7856075 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.80893217 0.01491691 
+
+[1] "Odds ratio"
+Odds ratio |           95% CI
+-----------------------------
+279.59     | [256.65, 304.58]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.79       | [0.78, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "SF3B1-p-K700E-ALT-C"
+character(0)
+[1] "SMG1-p-K3172T-ALT-G"
+[1] "HT242P1-S1H4L4U1"
+             ALT     WT
+Cancer_cell   36   8577
+Normal_cell 2698 501747
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 2.1823, df = NA, p-value = 0.1654
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 2.1823, df = 1, p-value = 0.9302
+alternative hypothesis: greater
+95 percent confidence interval:
+ -0.002324576  1.000000000
+sample estimates:
+     prop 1      prop 2 
+0.004179728 0.005348452 
+
+[1] "Odds ratio"
+Odds ratio |       95% CI
+-------------------------
+0.78       | [0.56, 1.09]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+1.52e-03   | [0.00, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "TP53-p-R282W-ALT-A"
+[1] "C3N-00663-11U3"
+            ALT    WT
+Cancer_cell 101   640
+Normal_cell 706 40439
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 546.83, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 546.83, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.09838429 1.00000000
+sample estimates:
+    prop 1     prop 2 
+0.13630229 0.01715883 
+
+[1] "Odds ratio"
+Odds ratio |        95% CI
+--------------------------
+9.04       | [7.24, 11.29]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.11       | [0.11, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "TP53-p-Y220C-ALT-C"
+[1] "HT65B1-H1A1A4U1"
+             ALT     WT
+Cancer_cell 1306   1298
+Normal_cell 2304 217069
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 38785, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 38785, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.4749128 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.50153610 0.01050266 
+
+[1] "Odds ratio"
+Odds ratio |          95% CI
+----------------------------
+94.79      | [86.89, 103.42]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.42       | [0.41, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "TPD52L1-p-A21---ALT-T"
+[1] "HT260C1-Th1K1L1U1"
+            ALT    WT
+Cancer_cell 587  3298
+Normal_cell 507 50152
+[1] "simulate.p.value=TRUE, correct=FALSE"
+
+	Pearson's Chi-squared test with simulated p-value (based on 2000
+	replicates)
+
+data:  data
+X-squared = 3654.2, df = NA, p-value = 0.0004998
+
+[1] "prop_test alternative=greater"
+
+	2-sample test for equality of proportions without continuity correction
+
+data:  x out of n
+X-squared = 3654.2, df = 1, p-value < 2.2e-16
+alternative hypothesis: greater
+95 percent confidence interval:
+ 0.1316067 1.0000000
+sample estimates:
+    prop 1     prop 2 
+0.15109395 0.01000809 
+
+[1] "Odds ratio"
+Odds ratio |         95% CI
+---------------------------
+17.61      | [15.55, 19.93]
+[1] "Effect size (Pearson's phi)"
+Phi (adj.) |       95% CI
+-------------------------
+0.26       | [0.25, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].Warning messages:
+1: In prop.test(x, n, alternative = "greater", correct = FALSE) :
+  Chi-squared approximation may be incorrect
+2: In prop.test(x, n, alternative = "greater", correct = FALSE) :
+  Chi-squared approximation may be incorrect
+3: In prop.test(x, n, alternative = "greater", correct = FALSE) :
+  Chi-squared approximation may be incorrect
+4: In prop.test(x, n, alternative = "greater", correct = FALSE) :
+  Chi-squared approximation may be incorrect
