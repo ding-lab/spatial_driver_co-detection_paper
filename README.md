@@ -73,4 +73,6 @@ Mutation mapping in matching snRNA-seq data relied on [scVarScan](https://github
 
 Variant calling (snvs/indels) was run using [Somaticwrapper](https://github.com/ding-lab/somaticwrapper) and it's implementation in the [PECGS pipeline](https://github.com/ding-lab/pecgs-pipeline).
 
+Layer calculation was run using [Morph](https://github.com/ding-lab/morph)
+
 ## Data Acccess
