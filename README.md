@@ -74,5 +74,7 @@ Mutation mapping in matching snRNA-seq data relied on [scVarScan](https://github
 Variant calling (snvs/indels) was run using [Somaticwrapper](https://github.com/ding-lab/somaticwrapper) and it's implementation in the [PECGS pipeline](https://github.com/ding-lab/pecgs-pipeline).
 
 Layer calculation was run using [Morph](https://github.com/ding-lab/morph)
+* environment for this can be found at `spatial_driver_co-detection_paper/morph_layers/`. Alternatively a docker image has been made available at: [austins2/spatial_driver_layer](https://hub.docker.com/repository/docker/austins2/spatial_driver_layer/general).
+* scripts and relevant input tables are available at `spatial_driver_co-detection_paper/morph_layer_calculations/spatial_driver_layer.yml`
 
 ## Data Acccess
