@@ -1,0 +1,12 @@
+name: spatial_driver_layer
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+dependencies:
+  - python=3.9.16
+  - matplotlib=3.9.2
+  - numpy=1.23.5
+  - scikit-image=0.19.3
+  - pandas=1.5.3
