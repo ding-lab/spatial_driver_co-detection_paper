@@ -350,3 +350,18 @@ with open('/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/morph/HT28
     for i in range(len(cell_id)):
         if label[int(y_centroid[i] / 0.2125), int(x_centroid[i] / 0.2125)]:
             dict_writer.writerow({'barcode': cell_id[i], 'label': label[int(y_centroid[i] / 0.2125), int(x_centroid[i] / 0.2125)]})
+
+gray = skimage.color.rgb2gray(tumor)
+binary = gray > 50 / 255
+filled = scipy.ndimage.binary_fill_holes(binary)
+filtered = skimage.morphology.remove_small_objects(filled, 50)
+distance = scipy.ndimage.distance_transform_edt(1 - filtered)
+eroded = numpy.zeros_like(distance)
+eroded[distance < 10 / 0.2125] = 1
+label, _ = scipy.ndimage.label(eroded, numpy.ones((3, 3)))
+with open('/diskmnt/Projects/HTAN_analysis_2/PDAC/xenium/snvs_project/morph/HT284P1_microregion_10um_expansion_rerun/testHT284P1tumorv2.csv', 'w') as f:
+    dict_writer = csv.DictWriter(f, fieldnames=['barcode', 'label'])
+    dict_writer.writeheader()
+    for i in range(len(cell_id)):
+        if label[int(y_centroid[i] / 0.2125), int(x_centroid[i] / 0.2125)]:
+            dict_writer.writerow({'barcode': cell_id[i], 'label': label[int(y_centroid[i] / 0.2125), int(x_centroid[i] / 0.2125)]})
