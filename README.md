@@ -58,7 +58,7 @@ Copy number calling was run with [GATK4SCNA](https://github.com/Aust1nS2/GATK4SC
 Scrublet for new snRNA-seq/multiome samples was run with [automated_scrublet](https://github.com/Aust1nS2/automated_scrublet).
 * the environment for scrublet automation can be found on the scrublet repository. A docker image is also provided.
 * Example for the stand alone and docker image can be found there.
-* The worklog for running scrublet on the new snRNA-seq data present in this cohort can be found at `spatial_driver_co-detection_paper/snRNA_scRNA_preprocessing/scrublet/worklog.txt`
+* The worklog for running scrublet on the new snRNA-seq data present in this cohort can be found at `spatial_driver_co-detection_paper/snRNA_scRNA_preprocessing/object_generation_worklog.sh`
 * Some additional python scripts used the environment found on the scrublet repository. Where applicable this is noted in the worklog.
 
 H&E images were aligned with [HEX-SIFT](https://github.com/Aust1nS2/HEX-SIFT) as outlined in the worklog file.
